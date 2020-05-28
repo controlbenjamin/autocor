@@ -123,7 +123,13 @@ namespace AutocorApi.Repositorios.Dapper
             bool respuesta = true;
             if (ObtenerUsuarioPorMail(usuario.Email) != null) { return false; }
             usuario.Password = BCrypt.Net.BCrypt.HashPassword(usuario.Password);
-            string sql = "insert into usuarios_web(CODCLI,email,Password) values (@NroCliente, @Email, @Password)";
+
+            //benja -> codigo viejo
+            //string sql = "insert into usuarios_web(CODCLI,email,Password) values (@NroCliente, @Email, @Password)";
+
+            //benja --> se coloca por defecto estado True, para que no se pida autorizacion
+            usuario.Estado = true;
+            string sql = "insert into usuarios_web(CODCLI, email, Password, estado) values (@NroCliente, @Email, @Password, @Estado)";
 
             try
             {
