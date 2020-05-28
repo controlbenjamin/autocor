@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="@Url.Content("~/Assets/img/icono.ico")" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    @Styles.Render("~/bundles/css")
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/style.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/main.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/responsive.css")">
+
+    <!-- Optional theme -->
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">*@
+    <title>Autocor | Zona Clientes</title>
+    <style>
+        body{
+            background-color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-4">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i> 0351 473 1941&nbsp;&nbsp;-&nbsp;&nbsp;<i class="fa fa-whatsapp"></i> +549 3512 324 717</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-8">
+                        <div class="social">
+                            <ul class="social-share">
+                                <li><a href="http://www.facebook.com/autocor" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" id="popover1" data-toggle="popover" data-placement="bottom" data-content="autocor srl" title="&nbsp;&nbsp;autocorsrl&nbsp;&nbsp;" data-trigger="hover"><i class="fa fa-skype"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+        <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="@BaseUrl.Url("")">
+                        <img src="@BaseUrl.Url("/Autocor/images/logo.png")" alt="Autocor">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right menu">
+                    <ul class="nav navbar-nav">
+                        <li class="menu__item"><a href="@BaseUrl.Url("")">Home</a></li>
+                        <li class="menu__item"><a href="@BaseUrl.Url("/Empresa")">Empresa</a></li>
+                        <li class="menu__item"><a href="@BaseUrl.Url("/Catalogo2")">Cat&aacute;logo</a></li>
+                        <li class="menu__item"><a href="@BaseUrl.Url("/Representaciones")">Representaciones</a></li>
+                        <li class="active"><a href="@Url.Action("Index", "Home")">Zona Clientes</a></li>
+                        <li class="menu__item"><a href="@BaseUrl.Url("/Contacto")">Contacto</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+    </header><!--/header-->
+
+    @RenderBody()
+
+    <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget">
+                        <ul>
+                            <li><img src="@Url.Content("~/Assets/img/logo_footer.png")" alt="Image" class="img-responsive"></li>
+                            <li><i class="fa fa-home"></i><a href="contacto.php#mapa">&nbsp;&nbsp;Santiago Liniers 28 - C&oacute;rdoba, CP: X5000FRB</a></li>
+                            <li><i class="fa fa-phone"></i>&nbsp;&nbsp;(0351) 4731941 - L&iacute;neas Rotativas</li>
+                            <li><i class="fa fa-fax"></i>&nbsp;&nbsp;Fax Gratuito: 0800-555-2550</li>
+                        </ul>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget">
+                        <h3>Contactanos</h3>
+                        <p>Dejanos tu consulta, duda o inquietud, te responderemos a la brevedad.</p>
+                        <a class="btn btn-primary readmore" href="@BaseUrl.Url("/Contacto")" style="margin-top:20px;">Enviar Consulta</a>
+                    </div>
+                </div><!--/.col-md-3-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="widget">
+                        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fautocor&amp;width=360&amp;height=230&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=true&amp;appId=181422175217" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:360px; height:230px;" allowTransparency="true"></iframe>
+                    </div>
+                </div><!--/.col-md-3-->
+
+            </div>
+        </div>
+    </section><!--/#bottom-->
+    @*<footer id="footer" class="midnight-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="http://qr.afip.gob.ar/?qr=A5Px_cRtf9CmeW1IG-tpJw,," target="_F960AFIPInfo">
+                            <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" height="60" width="48">
+                        </a>&nbsp;&nbsp;&copy; @DateTime.Now.Year Desarrollo Autocor SRL.
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->*@
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="http://qr.afip.gob.ar/?qr=A5Px_cRtf9CmeW1IG-tpJw,," target="_F960AFIPInfo">
+                        <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" height="60" width="48">
+                    </a>&nbsp;&nbsp;&copy; @DateTime.Now.Year Desarrollo Autocor SRL.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="@BaseUrl.Url("/")">Home</a></li>
+                        <li><a href="@BaseUrl.Url("/Empresa")">Empresa</a></li>
+                        <li><a href="@BaseUrl.Url("/Catalogo2")">Cat&aacute;logo</a></li>
+                        <li><a href="@BaseUrl.Url("/Representaciones")">Representaciones</a></li>
+                        <li><a href="@BaseUrl.UrlCatalogo("")">Zona Clientes</a></li>
+                        <li><a href="@BaseUrl.Url("/Contacto")">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", false)
+
+</body>
+</html>

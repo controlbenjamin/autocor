@@ -1,0 +1,133 @@
+﻿@model Autocor.Catalogo.Web.Models.MiCuentaModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="form-horizontal miCuenta col-xs-12 col-md-9">
+    <fieldset>
+        <legend>Tus Datos</legend>
+        <div class="form-group">
+            <div class="col-md-4">
+                <label for="textinput">Nro.Cliente</label>
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" readonly value="@Model.NroCliente"> 
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <div class="col-md-4">
+                <label for="textinput">CUIT</label>
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" readonly value="@Model.Cuit">
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <div class="col-md-4">
+                <label for="textinput">Titular</label>
+                <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md" readonly value="@Model.Titular">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-info cerrarSesion">Cerrar Sesión</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+
+
+<div class="col-xs-12 col-md-3 miCuenta barraLateral">
+    <label style="color: white;">Precio de Venta</label>
+    <div>
+        <label for="textinput" style="color: white">Beneficio</label>
+        <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md beneficio">
+    </div>
+    <div>
+        <label for="textinput" style="color: white">Descuento</label>
+        <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md descuento" >
+    </div>
+    <div class="col-md-12" style="padding-left:0px;">
+        <input type="checkbox" class="chk-iva" style="margin-top: 2%;" /><label style="color: white">&nbsp&nbsp&nbsp c/ IVA</label>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 DivBotonActualizar">
+        <button type="button" class="btn btn-default btnAct btnConfig btnActualizarDatos">Actualizar</button>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <button type="button" class="btn btn-default btnConfig btnCancelar">Cancelar</button>
+    </div>
+     
+</div>
+
+
+@section scripts
+{
+    @*<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>*@
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun.js")"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            CargarDatos();
+
+            $('.btnActualizarDatos').on('click', function () {
+
+                var data = {
+                    beneficio: parseFloat($('.beneficio').val()),
+                    descuento: parseFloat($('.descuento').val())
+                };
+
+                tokenize(data);
+                
+                $.ajax({
+                    data: data,
+                    url: baseUrl('MiCuenta/ActualizarConfiguracion'),
+                    type: 'post',
+                    beforeSend: function () {
+                        notificarSuccess('La configuración fue actualizada');
+                    }                 
+                }).done(function (response) {
+                    // actualizar local storage
+                    var beneficio = parseFloat($('.beneficio').val());
+                    var descuento = parseFloat($('.descuento').val());
+                    var iva = $('.chk-iva').is(':checked');
+                    actualizarPrecio(beneficio,descuento,iva);
+                });
+         
+            });
+            
+            $('.cerrarSesion').on('click', function () {
+                window.location.href = baseUrl("/Login/CerrarSesion");
+            });
+
+            $('.btnCancelar').on('click', function () {
+                window.location.reload();
+            });
+         
+        });
+
+        function CargarDatos() {
+
+            var totales = obtenerPrecio();
+            var beneficio = totales.beneficio;
+            var descuento = totales.descuento;
+            var iva = totales.iva;
+
+            $('.beneficio').val(beneficio);
+            $('.descuento').val(descuento);
+            $('.chk-iva').val(iva);
+
+            if (iva == false) {
+                $(".chk-iva").prop('checked', false);
+            }
+            else
+            {
+                $(".chk-iva").prop('checked', true);
+            }
+        }
+    </script>
+}
+
+
+

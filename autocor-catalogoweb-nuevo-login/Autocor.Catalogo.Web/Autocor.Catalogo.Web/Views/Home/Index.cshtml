@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Menu Catálogo";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Menu</title>
+    <link href="~/Assets/css/estilosHome.css" rel="stylesheet" />
+    <link href="~/Assets/plugins/fontello/fontello.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="@Url.Content("~/Assets/img/icono.ico")" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!--Header-->
+            <div class="col-xs-12 col-md-12" style="border-bottom: solid 1px;padding-left: 1px;" id="header">
+                <img src="~/Assets/img/logo.png" id="imagen2">
+                <img src="~/Assets/img/slogan1.png" id="imagen3">
+            </div>
+        </div><!--Header-->
+
+        <div class="row divColumnas">
+            <a href="@Url.Action("Index","Catalogo")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#FF0000;">            
+                    <img src="~/Assets/img/catalogo_icono.png" class="imagenBotones">
+                    <label class="textoBotones btnCatag">CATÁLOGO</label>           
+                </div>
+            </a>
+            <a href="@Url.Action("Index","Carrito")">
+                <div class="col-xs-12 col-sm-12 col-md-4  columnas" style="background:#4169E1;">
+                    <img src="~/Assets/img/carrito_icono.png" class="imagenBotones">
+                    <label class="textoBotones">CARRITO</label>
+                </div>
+            </a>
+            <a href="@Url.Action("Index","Pedidos")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#228B22;">
+                    <img src="~/Assets/img/pedidos_icono.png" class="imagenBotones">
+                    <label class="textoBotones">PEDIDOS</label>
+                </div>
+            </a>
+        </div>
+        <div class="row divColumnas">
+            <a href="@Url.Action("Index","Incorporaciones")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#800080">
+                    <img src="~/Assets/img/incorporaciones_icono.png" class="imagenBotones">
+                    <label class="textoBotones">INCORPORACIONES</label>
+                </div>
+            </a>
+            <a href="@Url.Action("Index","Ofertas")">
+                <div class="col-xs-12 col-sm-12 col-md-4  columnas" style="background:#6A5ACD;">
+                    <img src="~/Assets/img/ofertas_icono.png" class="imagenBotones">
+                    <label class="textoBotones btnOfer">OFERTAS Y PROMOCIONES</label>
+                </div>
+            </a>
+            <a href="@Url.Action("Index","MiCuenta")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#000080;">
+                    <img src="~/Assets/img/micuenta_icono.png" class="imagenBotones">
+                    <label class="textoBotones">MI CUENTA</label>
+                </div>
+            </a>
+        </div>
+        <div class="row divColumnas">
+            <a href="@Url.Action("Index","Descargas")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#FF8C00">
+                    <img src="~/Assets/img/descargas_icono.png" class="imagenBotones">
+                    <label class="textoBotones">DESCARGAS</label>
+                </div>
+            </a>
+            <a href="@Url.Action("Index","Contacto")">
+                <div class="col-xs-12 col-sm-12 col-md-4  columnas" style="background:#32CD32;">
+                    <img src="~/Assets/img/contacto_icono.png" class="imagenBotones">
+                    <label class="textoBotones">CONTACTO</label>
+                </div>
+            </a>
+            <a href="@Url.Action("CerrarSesion", "Login")">
+                <div class="col-xs-12 col-sm-12 col-md-4 columnas" style="background:#8B0000;">
+                    <img src="~/Assets/img/salirS.png" class="imagenBotones">
+                    <label class="textoBotones">SALIR</label>
+                </div>
+            </a>
+        </div>
+        <div class="row">
+            <footer class="mainFooter">
+                <div class="col-xs-12 col-sm-12">
+                    <img src="" id="banner">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+		const CANTIDAD_BANNERS = 10;
+		let banners = [];
+		let bannerUrl = 'http://www.autocor.com.ar/bannerCatalogo/banner';
+		let bannerExtension = '.jpg';
+		let numeroBanner = 1;
+
+		for(let i = 1; i<= CANTIDAD_BANNERS; i++){
+		    banners.push(bannerUrl + i + bannerExtension);
+		}
+
+		setInterval(function() {
+
+		    if(numeroBanner > banners.length - 1)
+		        numeroBanner = 1;
+
+		    document.getElementById('banner').setAttribute('src', banners[numeroBanner++]);
+
+		}, 6000);
+
+
+    </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

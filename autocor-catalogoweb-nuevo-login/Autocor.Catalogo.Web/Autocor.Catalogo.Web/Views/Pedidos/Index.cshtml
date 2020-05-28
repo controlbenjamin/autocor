@@ -1,0 +1,172 @@
+﻿@model Autocor.Catalogo.Web.Models.PedidosViewModel
+@{
+    ViewBag.Title = "Pedidos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    <style>
+          .table-detalle tbody tr td {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 1px;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-xs-12 col-md-12 ColumnaTabla">
+        <div class="contenedor-tabla wrapper">
+            <div class="table-responsive" style="margin-top: 1%;">
+                <table class="table table-striped table-condensed table-small table-small2 headerFixed table-pedidos" id="tabla-pedidos">
+                        <thead>
+                            <tr>
+                                <th class="col-md-2 cabezera">Nro Pedido</th>
+                                <th class="col-md-2 cabezera">Fecha</th>
+                                <th class="col-md-2 cabezera">Estado</th>
+                                <th class="col-md-2 cabezera">Fecha de envio</th>
+                                <th class="col-md-2 cabezera">Precio Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var p in Model.Pedidos)
+                            {
+                                <tr data-detalle="@Json.Encode(p.Detalles)" data-observacion="@p.Observaciones">
+                                    <td class="col-md-1">
+                                        @p.Id
+                                    </td>
+                                    <td class="col-md-1">
+                                        @p.Fecha.ToString("dd/MM/yyyy HH:mm")
+                                    </td>
+                                    <td class="col-md-1">
+                                        @p.Estado.Descripcion
+                                    </td>
+                                    <td class="col-md-1">
+                                        @p.FechaEnvio
+                                    </td>
+                                    <td class="col-md-1" style="text-align:right">
+                                        @p.ImporteTotal.ToString("C")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+            
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-12 ColumnaTabla">
+        <div class="contenedor-tabla wrapper">
+            <div class="table-responsive" style="margin-top: 1%;">
+                <table class="table table-striped table-condensed table-small table-small2 headerFixed table-detalle" id="tabla-detalle">
+                    <thead>
+                        <tr>
+                            <th class="col-md-1 cabezera">Cantidad</th>
+                            <th class="col-md-1 cabezera">Codigo</th>
+                            <th class="col-md-4 cabezera">Producto</th>
+                            <th class="col-md-3 cabezera">Rubro</th>
+                            <th class="col-md-1 cabezera">Precio Unitario</th>
+                            <th class="col-md-1 cabezera">Precio Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detalle-pedido">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-9">
+        <div class="form-group">
+            <label for="usr">Observaciones</label>
+            <textarea class="form-control observacion" rows="4" readonly></textarea>           
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-3 divBoton">
+        <button type="button" class="btn btn-success btn-lg btnActualizar"><span class="icon-update">Actualizar pedidos</span></button>
+    </div>
+</div>
+
+@section scripts{
+    <script src="@Url.Content("~/Assets/js/keynavigator.js")"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/floatthead/2.0.3/jquery.floatThead.min.js"></script>
+    @*<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>*@
+
+    <script src="@Url.Content("~/Assets/plugins/handlebars/handlebars-v4.0.10.js")"></script>
+    <script src="@Url.Content("~/Assets/plugins/jscroll/jquery.jscroll.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+
+  <script id="template-detalle" type="text/x-handlebars">
+        {{#each this}}
+           <tr>
+            <td>{{Cantidad}}</td>
+            <td>{{CodigoPieza}}</td>
+            <td title="{{Descripcion}}">{{Descripcion}}</td>
+            <td title="{{Rubro}}">{{Rubro}}</td>
+            <td class="text-right">{{formatPrecio PrecioUnitario}}</td>
+            <td class="text-right">{{formatPrecio SubTotal}}</td>
+          </tr>
+        {{/each}}
+  </script>
+
+  <script type="text/javascript">
+   
+      $(document).ready(function () {
+          helperPrecio();
+          inicializarKeynavigator(true, false);
+          $('.table-pedidos tbody tr:first').addClass('activo').click();
+          helperFormatoFecha();
+
+          var $table = $('table.headerFixed');
+
+          $table.floatThead({
+                scrollContainer: function ($table) {
+                    return $table.closest('.wrapper');
+                }
+            });
+       });
+            
+        function cargarDetallle(detalles) {
+
+            var source = $("#template-detalle").html();
+            var template = Handlebars.compile(source);
+
+            var html = template(detalles);
+            $('#detalle-pedido').html(html);
+            inicializarKeynavigator(false, true);
+        }
+
+        function inicializarKeynavigator(pedidos, detalles) {
+
+            if (pedidos) {
+                $('table#tabla-pedidos > tbody tr').keynavigator({
+                    cycle: false,
+                    activeClass: 'activo',
+                    onAfterActive: function ($tr) {
+                        var observaciones = $tr.data('observacion');
+                        $('.observacion').val(observaciones);
+                        var detalles = $tr.data('detalle');
+                        cargarDetallle(detalles);
+                    }
+                });
+            }
+
+            if (detalles) {
+                $('table#tabla-detalle > tbody tr').keynavigator({
+                    cycle: false,
+                    activeClass: 'activo',
+                    onAfterActive: function ($tr) {
+
+                    }
+                });
+            }
+        }
+
+        $('.btnActualizar').on('click', function () {
+            window.location.reload();
+        });
+    </script>
+}

@@ -1,0 +1,278 @@
+﻿@model Autocor.Catalogo.Web.Models.ProductosViewModel
+@{
+    ViewBag.Title = "Equivalencias";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles {
+    <style>
+        .card-producto {
+            margin-top: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+        }
+
+            .card-producto .codigo-producto {
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .card-producto .precio {
+                display: block;
+                text-align: center;
+                font-size: 2em;
+            }
+
+                .card-producto .precio .precioSecundario {
+                    font-size: 1.8rem;
+                    display: block;
+                }
+
+                .card-producto .precio .precioPrincipal {
+                    display: block;
+                }
+
+            .card-producto .descripcion-producto {
+                margin-bottom: 10px;
+                font-size: 1.3em;
+                text-align: center;
+            }
+
+
+            .card-producto img {
+                height: auto;
+                width: auto;
+                max-width: 100%;
+                max-height: 230px;
+            }
+
+        body.modal-open {
+            overflow: visible;
+        }
+
+        .stock {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+        }
+
+            .stock.verde {
+                background-image: url('./Assets/img/stockBoxVerde.png');
+            }
+
+            .stock.amarillo {
+                background-image: url('./Assets/img/stockBoxAmarillo.png');
+            }
+
+            .stock.gris {
+                background-image: url('./Assets/img/stockBoxGris.png');
+            }
+
+        .btnVolver{
+            margin-top: 5%;
+        }
+
+        .mensajeEqui{
+            margin-top:5%;
+        }
+    </style>
+}
+
+ <!--Modal detalle de cada artículo-->
+<div class="modal fade" id="modalDetalleProducto" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">producto</h4>
+            </div>
+
+            <div class="modal-body" id="detalleProducto">
+                <dl>
+                    <dt></dt>
+                    <dd class="modal-rubro"></dd>
+
+                    <dt></dt>
+                    <dd></dd>
+
+                    <dt></dt>
+                    <dd></dd>
+                </dl>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btnAgregarCarrito btnAgregarCarritoXs btn-block" data-producto="">
+                    Añadir al carrito
+                </button>
+                <a href="#" class="linkEquivalencia btn btn-primary btn-block">Ver Equivalencias</a>
+
+                <button type="button" class="btn btn-primary btnCerrarModal btn-block" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cerrar modal-->
+
+<div class="container">
+    
+    @{
+        bool hayProductos = Model.Productos.Count() > 0;
+        string displayAlert = hayProductos ? "display:none" : "";
+        string displayTabla = hayProductos ? "" : "display:none";
+
+    }
+    <div class="alert alert-info alert-mensaje mensajeInfo mensajeEqui" style="@displayAlert"><i class="icon-attention-circled"></i>No hay  Equivalencias para este producto.</div>
+
+      @Html.Partial("_CardsProductos", Model.Productos)
+
+    <button class="btn btn-block btn-primary btnVolver" onclick="window.history.back()">Volver al Catálogo</button>
+</div>
+
+
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/plugins/handlebars/handlebars-v4.0.10.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+
+<script type="text/x-handlebars-template" id="template-detalleProducto">
+    <dl>
+        <dt>Rubro</dt>
+        <dd>{{Rubro.Descripcion}}</dd>
+
+        <dt>Marca</dt>
+        <dd>{{Marca.Descripcion}}</dd>
+
+        <dt>Tipo</dt>
+        <dd>{{TipoAuto.Descripcion}}</dd>
+    </dl>
+
+
+    <h3 class="text-center">Parámetros</h3>
+    <dl>
+        {{#each Parametros}}
+        <dt>{{Parametro}}</dt>
+        <dd>{{Valor}}</dd>
+        {{/each}}
+        <dt>Stock</dt>
+        <dd>
+            {{#if TieneStock}}
+            <span class="stock stockDisponible verde" title="Stock disponible"></span>
+            <span class="stock stockNoDisponible gris" title="Stock disponible"></span>
+            {{else}}
+            <span class="stock stockDisponible gris" title="Consultar stock"></span>
+            <span class="stock stockNoDisponible amarillo" title="Consultar stock"></span>
+            {{/if}}
+        </dd>
+    </dl>
+
+</script>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+
+            cambiarPrecios();
+
+            $('#formFiltros').on('change', 'select', function () {
+                $('#formFiltros').submit();
+            });
+
+            $('.btnVerDetalle').on('click', function () {
+                var producto = $(this).closest('.card-producto').data('producto');
+
+                var $modal = $('#modalDetalleProducto');
+                $modal.find('.modal-title').html(producto.Descripcion);
+                $modal.find('.btnAgregarCarrito').data('producto', producto.CodigoPieza);
+                $modal.find('.linkEquivalencia').attr('href', baseUrl('Catalogo/Equivalencias', { codigoPieza: producto.CodigoPieza }));
+                obtenerDetalleProducto(producto);
+                cargarDatosProducto(producto);
+                $modal.modal('show');
+            });
+
+            $('.btnAgregarCarrito').on('click', function () {
+                var codigoProducto = $(this).data('producto');
+                if (!codigoProducto) {
+                    notificarError('No se ha especificado el producto');
+                    return;
+                }
+
+                input('Ingrese cantidad', function (value) {
+
+                    var cantidad = parseInt(value);
+
+                    if (isNaN(cantidad)) {
+                        notificarWarning('Ingrese una cantidad válida');
+                        return;
+                    }
+
+                    agregarAlCarrito(cantidad, codigoProducto, true, function () {
+                        notificarSuccess('Producto agregado al carrito');
+                    });
+                });
+            });
+        });
+
+        function obtenerDetalleProducto(producto) {
+
+            var source = $("#template-detalleProducto").html();
+            var template = Handlebars.compile(source);
+            var html = template(producto);
+            $('#detalleProducto').html(html);
+
+            if (producto.TieneEquivalencias === true) {
+                $('.modal-footer .btnEquivalenciaXs').addClass('btn-primary');
+            }
+            else {
+                $('.modal-footer .btnEquivalenciaXs').prop('disabled', !producto.TieneEquivalencias);
+                $('.modal-footer .btnEquivalenciaXs').removeClass('btn-primary', !producto.TieneEquivalencias);
+            }
+
+        }
+
+        function cargarDatosProducto(producto) {
+            // verificamos si el producto ya fue cargado (para evitar agregar los parámetros manuales)
+            if (!producto.GrupoParametros) {
+                // agregar código artículo y nro original como parámetros manuales
+                producto.Parametros.unshift({ Parametro: 'Nro. Original', Valor: producto.NumeroOriginal || '---' });
+                producto.Parametros.unshift({ Parametro: 'Cod. Articulo', Valor: producto.CodigoPieza });
+            }
+
+            producto.TieneStock = producto.Stock > 3;
+
+            var source = $("#template-detalleProducto").html();
+            var template = Handlebars.compile(source);
+
+            var html = template(producto);
+            $('#detalleProducto').html(html);
+
+            if (producto.TieneEquivalencias === true) {
+                $('#detalleProducto .linkEquivalencia').removeClass('btn-default');
+                $('#detalleProducto .linkEquivalencia').addClass('btn-primary');
+            }
+            else {
+                $('#detalleProducto .linkEquivalencia').prop('disabled', !producto.TieneEquivalencias);
+                $('#detalleProducto .linkEquivalencia').removeClass('btn-primary', !producto.TieneEquivalencias);
+            }
+        }
+
+        function cambiarPrecios() {
+            var calculadora = new CalculadoraPrecio();
+
+            $('.card-producto.calcular').each(function (index, card) {
+                var producto = $(this).data('producto');
+
+                var precioVigente = producto.PrecioVigente;
+                var precioVenta = calculadora.calcularPrecio(precioVigente);
+                var precioNeto = calculadora.calcularPrecioNeto(precioVigente);
+
+                $(this).find('.precioVenta').html('$ '+formatNumber(precioVenta));
+                $(this).find('.precioNeto').html('$ '+formatNumber(precioNeto));
+
+                $(this).removeClass('calcular');
+            });
+        }
+
+</script>
+
+
+}

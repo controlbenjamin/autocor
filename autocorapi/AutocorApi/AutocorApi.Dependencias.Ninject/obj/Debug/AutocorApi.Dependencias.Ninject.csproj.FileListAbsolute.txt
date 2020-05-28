@@ -1,0 +1,129 @@
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csprojAssemblyReference.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CoreCompileInputs.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CopyComplete
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csprojAssemblyReference.cache
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CopyComplete
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll.config
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Dependencias.Ninject.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Repositorios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Servicios.dll.config
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Ninject.Web.Common.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutocorApi.Entidades.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\Dapper.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\BCrypt.Net-Next.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\bin\Debug\AutoMapper.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csprojAssemblyReference.cache
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.csproj.CopyComplete
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\obj\Debug\AutocorApi.Dependencias.Ninject.pdb

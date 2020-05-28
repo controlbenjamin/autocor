@@ -1,0 +1,206 @@
+﻿@using Autocor.Catalogo.Web.Utils.Mensaje
+@{ 
+    string mensaje = string.Empty;
+    if(ViewBag.Mensaje != null)
+    {
+        var mensajeWeb = ViewBag.Mensaje as MensajeWeb;
+        mensaje = Json.Encode(mensajeWeb);
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+    <title>@ViewBag.Title</title>
+   
+     @Styles.Render("~/bundles/css")
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Assets/plugins/overhang/overhang.min.css")"/>   
+    <link rel="shortcut icon" href="@Url.Content("~/Assets/img/icono.ico")" />
+    <link href="@Url.Content("~/Assets/plugins/overhang/overhang.min.css")" rel="stylesheet" />
+    
+    
+    @RenderSection("styles", false)
+</head>
+<body>
+    @{
+        string baseUrl = Request.Url.Scheme + "://" + Request.Url.Authority + Request.ApplicationPath.TrimEnd('/') + "/";
+    }
+    <input type="hidden" id="_baseUrl" value="@baseUrl" />
+    <input type="hidden" id="_mensaje" value="@mensaje" />
+    
+    @Html.AntiForgeryToken()
+
+    <header class="divColumn">
+        <div class="btnNav">
+            <img src="~/Assets/img/logo.png" id="imagenCatalogo">
+            <a><span class="icon-menu"></span></a>
+        </div>
+        <a href=""  class="Ocultar">
+            <div class="col-xs-3 col-md-3 divImagenLogo">
+                <img src="~/Assets/img/logo.png" id="imagenCatalogo">
+            </div>
+        </a>
+        @*<a href="@Url.Action("Index", "Home")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #000099">
+                <img src="~/Assets/img/menu_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu textoInicio">Inicio</label>
+            </div>
+        </a>*@
+        <a href="@Url.Action("Index", "Catalogo")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #E50000">
+                <img src="~/Assets/img/catalogo_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Cátalogo</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Carrito")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #3A5ECA">
+                <img src="~/Assets/img/carrito_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Carrito</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Pedidos")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #28A628">
+                <img src="~/Assets/img/pedidos_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Pedidos</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index", "Incorporaciones")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #990099">
+                <img src="~/Assets/img/incorporaciones_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu labelIncorporaciones">Incorporaciones</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Ofertas")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #5F51B8">
+                <img src="~/Assets/img/ofertas_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Ofertas</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","MiCuenta")"  class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #1E1E86">
+                <img src="~/Assets/img/chat_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Mi Cuenta</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Descargas")" class="Ocultar">
+            <div class="col-xs-1 col-md-1 botonesMenu" style="background: #ff8c00">
+                <img src="~/Assets/img/descargas_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Descargas</label>
+            </div>
+        </a>
+    </header><!--header-->
+
+    <div class="menu_bar">
+        <a href="@Url.Action("Index", "Catalogo")">
+            <div class="botonesMenu" style="background: #E50000">
+                <img src="~/Assets/img/catalogo_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Cátalogo</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Carrito")">
+            <div class="botonesMenu" style="background: #3A5ECA">
+                <img src="~/Assets/img/carrito_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Carrito</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Pedidos")">
+            <div class="botonesMenu" style="background: #28A628">
+                <img src="~/Assets/img/pedidos_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Pedidos</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index", "Incorporaciones")">
+            <div class="botonesMenu" style="background: #990099">
+                <img src="~/Assets/img/incorporaciones_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Incorporaciones</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Ofertas")">
+            <div class="botonesMenu" style="background: #5F51B8">
+                <img src="~/Assets/img/ofertas_icono_s.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Ofertas</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","MiCuenta")">
+            <div class="botonesMenu" style="background: #1E1E86">
+                <img src="~/Assets/img/chat_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Mi Cuenta</label>
+            </div>
+        </a>
+        <a href="@Url.Action("Index","Descargas")">
+            <div class="botonesMenu" style="background: #ff8c00">
+                <img src="~/Assets/img/descargas_icono_S.png" class="imagenBotonesMenu">
+                <label class="textoBotonesMenu">Descargas</label>
+            </div>
+        </a>
+    </div><!--menuBotones-->
+    
+
+    <main>
+        <div class="container-fluid">
+            @RenderBody()     
+        </div>
+    </main>
+    <footer class="mainFooter">
+        <div class="col-xs-12 col-sm-12" style="height: 64px;">
+            <img src="" id="banner">
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="@Url.Content("~/Assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js")"></script>
+    @*<script src="@Url.Content("~/Assets/plugins/overhang/overhang.min.js")"></script>*@
+    <script src="@Url.Content("~/Assets/plugins/overhang/overhang.js")"></script>  
+    <script src="@Url.Content("~/Assets/js/comun.js")"></script>
+    
+    @RenderSection("scripts", false)
+
+    <script>
+
+        $(document).ready(main);
+		const CANTIDAD_BANNERS = 10;
+		let banners = [];
+		let bannerUrl = 'http://www.autocor.com.ar/autocor/bannerCatalogo/banner';
+		let bannerExtension = '.jpg';
+		let numeroBanner = 1;
+
+		for(let i = 1; i<= CANTIDAD_BANNERS; i++){
+		    banners.push(bannerUrl + i + bannerExtension);
+		}
+
+		setInterval(function() {
+
+		    if(numeroBanner > banners.length - 1)
+		        numeroBanner = 1;
+
+		    document.getElementById('banner').setAttribute('src', banners[numeroBanner++]);
+
+		}, 8000);
+
+
+		var contador = 1;
+
+		function main() {
+
+		    checkMensaje();
+		    $('.btnNav').click(function () {
+		        if (contador == 1) {
+		            $(".menu_bar").slideDown("fast");
+		            contador = 0;
+		        } else {
+		            $(".menu_bar").slideUp("fast");
+		            contador = 1;
+		        }
+		    });
+		};
+
+    </script>
+</body>
+</html>

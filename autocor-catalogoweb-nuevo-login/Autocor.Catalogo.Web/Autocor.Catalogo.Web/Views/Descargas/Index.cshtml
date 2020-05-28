@@ -1,0 +1,106 @@
+﻿@model Autocor.Catalogo.Web.Models.ActualizacionesModel
+@{
+    ViewBag.Title = "Descargas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #contenido{
+        margin-top: 10%;
+    }
+    .center{
+        text-align: center;
+        padding-bottom: 55px;
+    }
+    .iconoDescarga{
+            color: #136032;
+    }
+    .iconoDescarga:hover{
+        color:black;
+    }
+</style>
+
+<div id="contenido" class="contenedorDescargaDesktop">
+
+    <table width="98%" border="0" align="center" cellpadding="0" cellspacing="5" class="Estilo3">
+        <tr>                                                                         
+            <td width="25%" align="center"><a href="@BaseUrl.Url("/catalogo/setup.exe")"><img src="@Url.Content("~/Assets/img/catalogoNuevoV.jpg")" width="120" height="120" /></a></td>
+            <td width="25%" align="center"><a href="@BaseUrl.Url("/autocor/preciosv4.exe")"><img src="@Url.Content("~/Assets/img/preciosv4Nuevo.jpg")" width="120" height="120" /></a></td>
+
+            @*<td width="25%" align="center"><a href="../precios.exe"><img src="@Url.Content("~/Assets/img/preciov3Nuevo.jpg")" alt="" width="120" height="120" /></a></td>
+            <td width="25%" align="center"><a href="../Catalogoautocorsrl.exe"><img src="@Url.Content("~/Assets/img/actualizacionv3y4Nuevo.jpg")" width="120" height="120" /></a></td>*@
+        </tr>
+        <tr>
+            <td align="center"><strong>Cat&aacute;logo Nuevo</strong></td>
+            <td align="center"><strong>Actualizaci&oacute;n de precios V.4</strong></td>
+
+            @*<td align="center"><strong>Actualizaci&oacute;n de precios V.3</strong></td>
+            <td align="center"><strong>Actualizaci&oacute;n de versi&oacute;n 3 y 4</strong></td>*@
+        </tr>
+        <tr>
+            <td align="center">
+                Versi&oacute;n para equipos con Windows XP SP3 o superior.
+                <br>Descarga de actualizaciones autom&aacute;tica.
+            </td>
+  
+            @*<td align="center">Ultima actualizaci&oacute;n: </td>
+            <td align="center">Ultima actualizaci&oacute;n: </td>*@
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <div class="center wow fadeInDown">
+        <p style="font-size: 20px;"><b>Complementos Catálogo</b></p>
+        <p class="lead">
+            @*SQL Server Compact 4 - Windows <b>32 BITS</b>&nbsp;&nbsp;&nbsp;<a href="../complementos/SSCERuntime_x86-ESN.exe"><i class="icon-download iconoDescarga"></i></a><br>*@
+            SQL Server Compact 4 - Windows <b>32 BITS</b>&nbsp;&nbsp;&nbsp;<a href="@BaseUrl.Url("/autocor/complementos/SSCERuntime_x86-ESN.exe")"><i class="icon-download iconoDescarga"></i></a><br>
+
+            @*SQL Server Compact 4 - Windows <b>64 BITS</b>&nbsp;&nbsp;&nbsp;<a href="../complementos/SSCERuntime_x64-ESN.exe"><i class="icon-download iconoDescarga"></i></a>*@
+            SQL Server Compact 4 - Windows <b>64 BITS</b>&nbsp;&nbsp;&nbsp;<a href="@BaseUrl.Url("/autocor/complementos/SSCERuntime_x64-ESN.exe")"><i class="icon-download iconoDescarga"></i></a>
+        </p>
+    </div>
+</div>
+
+
+<div id="contenido" class="contenedorDescargasMobil">
+
+    <div class="row">
+        <div class="col-md-6" style="text-align:center">
+            <a href="@BaseUrl.Url("/catalogo/setup.exe")"><img src="@Url.Content("~/Assets/img/catalogoNuevoV.jpg")" width="120" height="120" /></a>
+            <strong style="display:block">Cat&aacute;logo Nuevo</strong>
+            <p>Versi&oacute;n para equipos con Windows XP SP3 o superior.<br>Descarga de actualizaciones autom&aacute;tica.</p>
+        </div>
+
+        <div class="col-md-6" style="text-align:center">
+            <a href="@BaseUrl.Url("/autocor/preciosv4.exe")"><img src="@Url.Content("~/Assets/img/preciosv4Nuevo.jpg")" width="120" height="120" /></a>
+            <strong style="display:block">Actualizaci&oacute;n de precios V.4</strong>
+            <p>Última actualizaci&oacute;n:</p>
+        </div>
+
+        @*<div class="col-md-3" style="text-align:center">
+            <a href="../precios.exe"><img src="@Url.Content("~/Assets/img/preciov3Nuevo.jpg")" alt="" width="120" height="120" /></a>
+            <strong style="display:block">Actualizaci&oacute;n de precios V.3</strong>
+            <p>Ultima actualizaci&oacute;n:</p>
+        </div>
+
+        <div class="col-md-3" style="text-align:center">
+            <a href="../Catalogoautocorsrl.exe"><img src="@Url.Content("~/Assets/img/actualizacionv3y4Nuevo.jpg")" width="120" height="120" /></a>
+            <strong style="display:block">Actualizaci&oacute;n de versi&oacute;n 3 y 4</strong>
+            <p>Ultima actualizaci&oacute;n:</p>
+        </div>*@
+
+    </div>
+           
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+    <div class="center wow fadeInDown">
+        <p style="font-size: 20px;"><b>Complementos Catálogo</b></p>
+        <p class="lead">                                                        
+            SQL Server Compact 4 - Windows <b>32 BITS</b>&nbsp;&nbsp;&nbsp;<a href="@BaseUrl.Url("/autocor/complementos/SSCERuntime_x86-ESN.exe")"><i class="icon-download iconoDescarga"></i></a><br>
+            SQL Server Compact 4 - Windows <b>64 BITS</b>&nbsp;&nbsp;&nbsp;<a href="@BaseUrl.Url("/autocor/complementos/SSCERuntime_x64-ESN.exe")"><i class="icon-download iconoDescarga"></i></a>
+          
+        </p>
+    </div>
+</div>

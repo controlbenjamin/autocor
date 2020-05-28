@@ -1,0 +1,286 @@
+﻿@model Autocor.Catalogo.Web.Models.OfertasViewModel
+@{
+    ViewBag.Title = "Ofertas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+
+    <style>
+        .table-productos tbody tr td {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 1px;
+        }
+
+        .table-productos tbody:hover {
+            cursor: pointer;
+        }
+
+        #img-producto {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.7);
+            display: none;
+        }
+
+        .ventana {
+            width: 50%;
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            margin-left: -200px;
+        }
+
+            .ventana span {
+                color: #fff;
+                background-color: #000;
+                padding: 0.0em 0.4em .5em .4em;
+                font-family: Arial;
+                font-weight: bold;
+                border: 2px solid #fff;
+                border-radius: 50%;
+                position: absolute;
+                top: -15px;
+                right: -20px;
+                cursor: pointer;
+                height: 27px;
+            }
+    </style>
+
+}
+
+<!--Modal imagen-->
+<div class="modal" id="modal-imagen-producto" tabindex="-1">
+    <div class="ventana">
+        <img src="" alt="" class="ImagenModal" />
+        <span class="cerrar">x</span>
+    </div>
+</div>
+<!--cierra modal imagen-->
+<!--Modal Cantidad-->
+<div class="modal fade" id="modelCant" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="height:198px;">
+            <div class="panel panel-default" style="height:194px;">
+                <div class="panel-heading text-center">
+                    <span style="font-weight: bold;">Cantidad</span>
+                </div>
+                <div class="panel-body" style="padding:0px;">
+                    <input type="hidden" id="codigoProductoSelectUnidades" />
+                    <ul class="listado selectUnidades" style="padding-left:0px;">
+                        @*<li data-unidades="1">1 Unidad</li>
+                        <li data-unidades="2">2 Unidades</li>
+                        <li data-unidades="3">3 Unidades</li>
+                        <li data-unidades="4">4 Unidades</li>
+                        <li data-unidades="mas">Más...</li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cierra modal cantidad-->
+
+<div class="row">
+    <div class="col-xs-12 col-md-12 ColumnaTabla">
+        <div class="contenedor-tabla wrapper">
+            <div class="table-responsive fixed_headers" style="margin-top: 1%;">
+                <table class="table table-striped table-condensed table-small table-small2 headerFixed table-productos" id="tablaRubrosOferta">
+                    <thead>
+                        <tr>
+                            <th class="col-md-2 cabezera">Rubro</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var r in Model.Rubro)
+                        {
+                            <tr data-rubro="@r.Codigo">
+                                <td class="col-md-1">
+                                    @r.Descripcion
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-12 ColumnaTabla tablaOfertas">
+        <div class="contenedor-tabla wrapper">
+            <div class="table-responsive fixed_headers" style="margin-top: 1%;">
+                <table class="table table-striped table-condensed table-small table-small2 headerFixed table-productos" id="tablaProductosOferta">
+                    <thead>
+                        <tr>
+                            <th class="col-md-1 cabezera">Codigo</th>
+                            <th class="col-md-3 cabezera">Producto</th>
+                            <th class="col-md-2 cabezera">Marca</th>
+                            <th class="col-md-2 cabezera">Tipo</th>
+                            <th class="col-md-2 cabezera">Vencimiento Oferta</th>
+                            <th class="col-md-1 cabezera" style="text-align:right;">Precio Oferta</th>
+                            <th class="col-md-2 cabezera" style="text-align:right;">Precio Lista</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-productos"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row botoneraCarritoOferta" style="display:none;margin-top:10px;">
+    <div class="col-md-2 col-md-offset-6">
+        <div style="margin-top:5px">
+            <label>Unidad de Venta:</label>
+            <span class="unidadVenta"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <label>Cantidad:</label>
+            <input type="number" min="1" max="100" step="1" id="usr" value="1" class="txtCantidadCarrito txtCantidadCarritoDetalle">
+            <button type="button" class="btn btn-primary btnAgregarCarrito btnAgregarCarritoIncor" style="float:right;"><i class="icon-carrito carritosicono"></i> | Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+
+<!--Contenedor carta producto Mobil-->
+<div class="container contenedorMobilCarrito" id="mobilContent">
+
+</div>
+
+<div class="row detalleProductoIncorporacion" id="detalle-producto" style="margin-top:1%;">
+    @* Se llena mediante template de handlebars *@
+</div>
+
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/js/keynavigator.js")"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/floatthead/2.0.3/jquery.floatThead.min.js"></script>
+    @*<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>*@
+    <script src="@Url.Content("~/Assets/plugins/handlebars/handlebars-v4.0.10.js")"></script>
+    <script src="@Url.Content("~/Assets/plugins/jscroll/jquery.jscroll.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+
+    <script id="template-detalle-producto" type="text/x-handlebars">
+        @* Recibe un objeto producto (ProductoBaseDto) *@
+
+        @* Imagen *@
+        <div class="col-md-3 abrir">
+            <div class="cuadroImagen cuadroImagenDetalle">
+                <img src="{{UrlImagen}}" alt="{{Descripcion}}" id="img-producto" class="img-producto" style="max-height:100%;" onerror="setImageDefault(this)" />
+            </div>
+        </div>
+
+        @* Datos *@
+        <div class="col-md-9">
+            @* Parámetros *@
+            <div class="row">
+                <div class="parametros-productos">
+                    {{#each GrupoParametros}}
+                    <div class="col-md-2 col-xs-5 grupoParametro">
+                        {{#each this}}
+                        <div class="form-group">
+                            <label>{{Parametro}}</label>
+                            <p class="form-control-static parametros">{{Valor}}</p>
+                        </div>
+                        {{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            @* Ubicacion *@
+            <div class="row">
+                <div class="col-md-6 columnaPrecioVenta ">
+                    <label id="txtPrec" class="txtPrecioI">Precio Lista:</label>
+                    <input type="text" id="usr" class="txtPrecioProducto txtPrecioProductoI" value="{{Precio}}" readonly>
+                </div>
+                <div class="col-md-6 columnaPrecioVenta">
+
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="template-producto" type="text/x-handlebars">
+        {{#each this}}
+        <tr data-producto="{{CodigoPieza}}">
+            <td>
+                {{CodigoPieza}}
+            </td>
+            <td title="{{Descripcion}}">
+                {{Descripcion}}
+            </td>
+            <td title="{{Marca.Descripcion}}">
+                {{Marca.Descripcion}}
+            </td>
+            <td title="{{TipoAuto.Descripcion}}">
+                {{TipoAuto.Descripcion}}
+            </td>
+            <td>
+                {{formatDate OfertaValidez}}
+            </td>
+            <td style="text-align:right">
+                {{formatPrecio OfertaImporte}}
+            </td>
+            <td style="text-align:right">
+                {{formatPrecio Precio}}
+            </td>
+        </tr>
+        {{/each }}
+    </script>
+
+    <script id="template-mobilContent" type="text/x-handlebars">
+        <div class="containerProductos">
+            {{#each this}}
+            <div class="panel panel-default card-producto calcular" data-producto="{{CodigoPieza}}">
+
+                <img src="{{UrlImagen}}" alt="{{Descripcion}}" class="img-responsive" onerror="setImageDefault(this);" style="width:100%;">
+
+                <div class="panel-body ">
+
+                    <h1 class="codigo-producto" style="text-align:center">{{CodigoPieza}}</h1>
+
+                    <div class="descripcion-producto">
+                        <strong>Producto:</strong>
+                        <p>{{Descripcion}}</p>
+                        <strong>Marca:</strong>
+                        <p>{{Marca.Descripcion}}</p>
+                        <strong>Tipo:</strong>
+                        <p>{{TipoAuto.Descripcion}}</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="precio">
+                        <div class="precioCartaProductoCarrito">
+                            <span>Precio Oferta:</span>
+                            <strong class="precioVenta precioPrincipal">
+                                {{formatPrecio OfertaImporte}}
+                            </strong>
+                            <span>Precio Lista:</span>
+                            <strong class="precioVenta precioPrincipal">
+                                {{formatPrecio Precio}}
+                            </strong>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="button" class="btn btn-primary btnAgregarCarritoMovil" style="margin-left: 15%;" data-unidad-venta="{{UnidadVenta}}"><i class="icon-carrito carritosicono"></i> | Añadir al carrito</button>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </script>
+    <script src="~/Assets/js/ofertas.js"></script>
+}

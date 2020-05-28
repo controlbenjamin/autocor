@@ -1,0 +1,114 @@
+﻿@model  Autocor.Catalogo.Web.Models.UsuarioModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Login.cshtml";
+}
+
+<style>
+    .login {
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+</style>
+
+@if (ViewData.ModelState.IsValid)
+{
+    <!-- Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false" aria-labelledby="LoginModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">AVISO IMPORTANTE</h5>
+                </div>
+                <div class="modal-body">
+                    Si tiene usuario AUTOCOR, utilize su numero de cliente como usuario y su numero de cuil como clave.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+<div class="login">
+    @using (Html.BeginForm("IniciarSesion", "Login", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <h3 class="text-center">Inicio de sesión</h3>
+        <div class="form-group">
+            <label for="Nombre">Usuario</label>
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
+                @Html.TextBoxFor(model => model.Nombre, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Usuario" })
+            </div>
+            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger error" })
+        </div>
+
+        <div class="form-group">
+            <label for="Pass">Clave</label>
+            <div class="input-group input-group-lg passwordInput">
+                <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
+                @Html.PasswordFor(model => model.Password, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Clave" })
+                <span class="passwordeye input-group-addon " id="sizing-addon3" onclick="togglePassword()"><i class="fa fa-eye" aria-hidden="true"></i></span>
+            </div>
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger error" })
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            <label>@Html.CheckBoxFor(model => model.MantenerSesion, htmlAttributes: new { })<span class="loginsesioncheckbox"> no cerrar sesion</span></label>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <button type="submit" class="btn btn-exito btn-block btn-lg" id="boton" name="name">
+                    <i class="fa fa-sign-in fa-lg"></i>&nbsp;
+                    Ingresar a Catálogo
+                </button>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <a href="@Url.Action("Index","Registro")" class="btn btn-default btn-block btn-lg registrar">
+                    Registrarse
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12 col-sm-12 btnConsultar">
+                <a href="@Url.Action("VistaContacto","Contacto")" class="linkConsulta">
+                    Consultas aquí
+                </a>
+
+            </div>
+        </div>
+    }
+</div>
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/js/comun.js")"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            generarCandado();
+            generarOcultarBody();
+            $('#LoginModal').modal();
+
+            /* $('#Password').mask('00-00000000-0', {
+                 placeholder: '__-________-_'
+             })*/
+        });
+
+        function togglePassword() {
+        var x = document.getElementById("Password");
+        if (x.type === "password") {
+          x.type = "text";
+         } else {
+          x.type = "password";
+        }
+        } 
+    </script>
+}

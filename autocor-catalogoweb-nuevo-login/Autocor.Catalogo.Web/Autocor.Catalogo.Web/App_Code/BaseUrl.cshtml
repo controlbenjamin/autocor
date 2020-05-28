@@ -1,0 +1,12 @@
+﻿@helper Url(string url) {
+
+// string baseUrl = "http://autocor.brazilsouth.cloudapp.azure.com";
+string baseUrl = "http://autocor.com.ar";
+    @(baseUrl + url)
+}
+
+@helper UrlCatalogo(string url) { 
+// string baseUrl = "http://autocor.brazilsouth.cloudapp.azure.com:8080";
+string baseUrl = "http://catalogo.autocor.com.ar";
+    @(baseUrl + url)
+}

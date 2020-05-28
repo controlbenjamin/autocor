@@ -1,0 +1,158 @@
+body, 
+html{
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	position: relative; 
+}
+#imagen2{
+	padding: 17px;
+	float:left;
+	width: 20%;
+}
+#imagen3{
+	padding-top: 30px;
+	display:block;
+	margin:0 auto 0 auto;
+	padding-bottom: 5px;
+}
+body{
+	background:white;
+
+}
+#banner{
+	margin-left: 23%;
+}
+
+#header{
+	margin-bottom:1%;
+}
+.columnas{
+	
+	height: 165px;
+	width: 28%; 
+	margin-right: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.divColumnas{
+	padding-left: 10%;
+	padding-right: 5%;
+}
+.btnCatag{
+    margin-top:8%!important;
+}
+.textoBotones{
+	display: block;
+    margin-top: 3%;
+    font-size: 154%;
+    color: white;
+    font-family: "Lato";
+}
+.textoBotones:hover{
+    cursor:pointer;
+}
+.imagenBotones{
+	margin-top: 5%;
+}
+
+.btnActualizar{
+	margin-top: 18%;
+	width: 100%;
+}
+
+footer.mainFooter {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+	.columnas{
+		width: 100%;
+	}
+	.divColumnas{
+		padding-left:5%;
+        margin-top:10%
+	}
+    .btnOfer{
+       margin-top: -4%;
+    }
+	#imagenCatalogo{
+		margin-top: 28%;
+		padding: 0px;
+	}
+    #banner {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@media (min-width:992px)
+{
+    .columnas{
+        width:28%!important;
+    }
+}
+@media only screen and (max-width: 1024px) and (min-width: 778px){
+	.columnas{
+		width: 29% !important;
+	}
+	.divColumnas{
+		padding-left: 7%;
+	}
+	.textoBotones{
+		font-size: 150%;
+	}
+	.imagenBotones{
+		margin-top: 10%;
+	}
+    #banner {
+        margin-left: 14%;
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1030px){
+	.columnas {
+    	height: 157px;
+    	width: 30%;
+    	margin-right: 20px;
+    	margin-bottom: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) and (min-width: 430px){
+	.columnas{
+		width: 28% !important;
+	}
+	.textoBotones{
+		font-size: 70%;
+	}	
+	.imagenBotones{
+		margin-top: 25%;
+	}
+    #banner {
+    margin-left: 3%;
+}
+}
+
+@media(max-width: 320px){
+	#imagen2{
+		width: 100%;
+		padding: 5px;
+		float: left;
+	}
+	#imagen3{
+		    width: 90%;
+  		    padding-left: 4%;
+	}
+	#imagenCatalogo{
+	    width: 100%;
+		padding: 5px;
+		float: left;
+	}
+    #banner {
+    margin-left: 0%;
+    width: 100%;
+}
+}

@@ -1,0 +1,21 @@
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb

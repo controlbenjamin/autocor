@@ -1,0 +1,610 @@
+﻿@model Autocor.Catalogo.Web.Models.ProductosViewModel
+@{
+    ViewBag.Title = "Catálogo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@section styles {
+    <style>
+        .card-producto {
+            margin-top: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .card-producto .codigo-producto {
+                text-align: center;
+                font-weight: bold;
+            }
+
+        .card-producto .precio {
+                display: block;
+                text-align: center;
+                font-size: 2em;
+            }
+
+        .card-producto .precio .precioSecundario {
+                    font-size: 1.8rem;
+                    display: block;
+                }
+
+        .card-producto .precio .precioPrincipal {
+                    display: block;
+                }
+
+        .card-producto .descripcion-producto {
+                margin-bottom: 10px;
+                font-size: 1.3em;
+                text-align: center;
+            }
+
+        .card-producto img {
+                height: auto;
+                width: auto;
+                max-width: 100%;
+                max-height: 230px;
+            }
+
+        body.modal-open {
+            overflow: visible;
+        }
+
+        .stock {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+        }
+
+        .stock.verde {
+                background-image: url('./Assets/img/stockBoxVerde.png');
+            }
+
+        .stock.amarillo {
+                background-image: url('./Assets/img/stockBoxAmarillo.png');
+            }
+
+        .stock.gris {
+                background-image: url('./Assets/img/stockBoxGris.png');
+            }
+
+        .botonCantidad{
+	  		display: block;
+   			height: 35px;
+   			text-align: center;
+   			text-decoration: none;
+   			border-bottom: 1px solid #f7f4f4;
+   			color: black;
+   			line-height: 37px;
+	  	}
+
+	  	.botonCantidad:hover{
+	  		background-color: #ebe7e7;
+	  		text-decoration: none;
+	  	}
+        .bordesParametros{
+            border:none;
+          
+        }
+
+        .lis{
+    display:inline-block;
+    width: 100%;
+    text-align: center;
+  }
+        .lis:hover{
+    background-color: #dad8d8;
+  }
+        .listado{
+    padding: 0;
+  }
+    </style>
+}
+ <!--Modal detalle de cada artículo-->
+<div class="modal fade" id="modalDetalleProducto" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">producto</h4>
+            </div>
+
+            <div class="modal-body" id="detalleProducto">
+                <dl>
+                    <dt></dt>
+                    <dd class="modal-rubro"></dd>
+
+                    <dt></dt>
+                    <dd></dd>
+
+                    <dt></dt>
+                    <dd></dd>
+                </dl>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btnAgregarCarrito btnAgregarCarritoXs btn-block" data-producto="">
+                    Añadir al carrito
+                </button>
+
+                <a href="#" class="linkEquivalencia btn btn-default btn-block">Ver Equivalencias</a>
+
+                <button type="button" class="btn btn-primary btnCerrarModal btn-block" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cerrar modal-->
+
+<!--Modal Cantidad-->
+<div class="modal fade" id="modelCant" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="height:198px;">
+            <div class="panel panel-default" style="height:194px;">
+                <div class="panel-heading text-center">
+                    <span style="font-weight: bold;">Cantidad</span>
+                </div>
+                <div class="panel-body" style="padding:0px;">
+                    <input type="hidden" id="codigoProductoSelectUnidades" />
+                    <ul class="listado selectUnidades">
+                        @*<li data-unidades="1">1 Unidad</li>
+                        <li data-unidades="2">2 Unidades</li>
+                        <li data-unidades="3">3 Unidades</li>
+                        <li data-unidades="4">4 Unidades</li>
+                        <li data-unidades="mas">Más...</li>*@
+                    </ul>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--cierra modal cantidad-->
+
+<div class="container">
+    @Html.Partial("_FiltroProductos", Model.FiltroProductos)
+
+    <div class="containerProductos">
+        @Html.Partial("_CardsProductos", Model.Productos)
+    </div>
+   
+    @{ 
+        var filtroPaginacion = new Autocor.Catalogo.Web.Models.Filtros.FiltroProductoModel
+        {
+            CriterioBusqueda = Model.FiltroProductos.CriterioBusqueda,
+            CodigoMarca = Model.FiltroProductos.CodigoMarca,
+            CodigoRubro = Model.FiltroProductos.CodigoRubro,
+            CodigoTipoAuto = Model.FiltroProductos.CodigoTipoAuto,
+            Pagina = Model.FiltroProductos.Pagina
+        };
+    }
+
+    @Html.Hidden("Pagina", Model.FiltroProductos.Pagina)
+
+    <input type="hidden" value="@Url.Action("Index", "Catalogo", filtroPaginacion)" class="linkPaginacion" />
+    <input type="hidden" value="@(Model.UltimaPagina ? "true" : "false")" id="ultimaPagina" />  
+
+    @if (!Model.UltimaPagina)
+    {
+        <div style="height:50px;">
+            <div id="productos-loading" class="text-center" style="display:none"><i class="icon-spin6 animate-spin" style="color:#28A628;font-size:2em;"></i></div>
+
+            <button type="button" class="btnPaginaSiguiente btn btn-success btn-block" style="font-weight: bold;">
+                Cargar más <i class="icon-cw"></i>
+            </button>
+        </div>
+    }
+
+</div>
+
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/plugins/handlebars/handlebars-v4.0.10.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+
+    <script type="text/x-handlebars-template" id="template-detalleProducto">
+        <dl>
+            <dt>Rubro</dt>
+            <dd>{{Rubro.Descripcion}}</dd>
+
+            <dt>Marca</dt>
+            <dd>{{Marca.Descripcion}}</dd>
+
+            <dt>Tipo</dt>
+            <dd>{{TipoAuto.Descripcion}}</dd>
+        </dl>
+
+
+        <h3 class="text-center">Parámetros</h3>
+
+        <table>
+            {{#each Parametros}}
+            <tr>
+                <td class="bordesParametros">{{Parametro}}:</td>
+                <td class="bordesParametros">{{Valor}}</td>
+            </tr>
+            {{/each}}
+            <tr>
+                {{#if TieneStock}}
+                <td class="bordesParametros">Stock</td>
+                <td class="bordesParametros">
+                    <span class="stock stockDisponible verde" title="Stock disponible"></span>
+                    <span class="stock stockNoDisponible gris" title="Stock disponible"></span>
+                </td>
+                {{else}}
+                <td class="bordesParametros">
+                    <span class="stock stockDisponible gris" title="Consultar stock"></span>
+                    <span class="stock stockNoDisponible amarillo" title="Consultar stock"></span>
+                </td>
+                {{/if}}
+            </tr>
+        </table>
+
+    </script>
+
+    <script type="text/javascript">
+        var _cargarPagina = true;
+
+        var bloqueadorMarca = false;
+        var bloqueadorTipoAuto = false;
+       
+        $(document).ready(function () {
+
+            cambiarPrecios();
+
+            var configCandado = obtenerCandado();
+            bloqueadorMarca = configCandado.marca;
+            bloqueadorTipoAuto = configCandado.tipo;
+            configurarCandado();
+
+            $('#formFiltros').on('change', 'select', function () {
+              //  $('#formFiltros').submit();
+            });
+
+            $('#formFiltros').on('click', '.btnBusca', function () {
+                $('#formFiltros').submit();
+            });
+
+            $(".target").change(function () {
+                if (bloqueadorMarca == false) {
+                    $.ajax({
+                        data: data,
+                        url: baseUrl('Catalogo/Index'),
+                        type: 'post',
+                        beforeSend: function () {
+                        }
+                    }).done(function (response) {
+                        if (typeof callback == 'function') {
+                            callback();
+                        }
+                    });
+                }
+            });
+
+            $('#CodigoRubro').change(function () {
+                ObtenerMarcasPorRubro();
+            });
+
+            $('.cboMarca').change(function () {
+                var codigoMarca = $('.cboMarca').val();
+
+                let url = baseUrl('/Catalogo/TipoAutoPorMarca');
+
+                if (bloqueadorTipoAuto === false) {
+                    $('.cboTipo option').remove();
+
+                    $.ajax({
+                        type: 'POST',
+                        url: url,
+                        dataType: 'json',
+                        data: { codigoMarca: codigoMarca },
+                        success: function (states) {
+                            $.each(states, function (i, state) {
+                                $('.cboTipo').append('<option value=' + state.Value + ">" + state.Text + "</option>");
+                            });
+                        },
+                        error: function (ex) {
+                            alert('error al recibir marcas' + ex);
+                        }
+                    });
+
+                    return false;
+                }
+            });
+
+            $('#formFiltros').on('click', '.btnBloquearMarca', function () {
+                if (bloqueadorMarca == false) {
+                    bloqueadorMarca = true;
+                    $('#candado').removeClass('icon-lock-open');
+                    $('#candado').addClass('icon-lock');
+                    actualizarCandados(bloqueadorMarca, bloqueadorTipoAuto);
+                }
+                else
+                    if (bloqueadorMarca == true) {
+                        bloqueadorMarca = false;
+                        $('#candado').addClass('icon-lock-open');
+                        $('#candado').removeClass('icon-lock');
+                        actualizarCandados(bloqueadorMarca, bloqueadorTipoAuto);
+                    }
+            });
+
+            $('#formFiltros').on('click', '.btnBloquearTipoAuto', function () {
+                if (bloqueadorTipoAuto == false) {
+                    bloqueadorTipoAuto = true;
+                    $('#candadoTipo').removeClass('icon-lock-open');
+                    $('#candadoTipo').addClass('icon-lock');
+                    actualizarCandados(bloqueadorMarca, bloqueadorTipoAuto);
+                }
+                else
+                    if (bloqueadorTipoAuto == true) {
+                        bloqueadorTipoAuto = false;
+                        $('#candadoTipo').addClass('icon-lock-open');
+                        $('#candadoTipo').removeClass('icon-lock');
+                        actualizarCandados(bloqueadorMarca, bloqueadorTipoAuto);
+                    }
+            });
+
+            $('.containerProductos').on('click','.btnVerDetalle', function () {
+                var producto = $(this).closest('.card-producto').data('producto');
+
+                var $modal = $('#modalDetalleProducto');
+                $modal.find('.modal-title').html(producto.Descripcion);
+                $modal.find('.btnAgregarCarrito').data('producto', producto.CodigoPieza);
+
+                if (producto.TieneEquivalencias === true) {
+                    $('#detalleProducto .linkEquivalencia').removeClass('btn-default');
+                    $('#detalleProducto .linkEquivalencia').addClass('btn-primary');
+                }
+                else {
+                    $('#detalleProducto .linkEquivalencia').attr('disabled', !producto.TieneEquivalencias);
+                    $('#detalleProducto .linkEquivalencia').attr('href', '#');
+                    $('#detalleProducto .linkEquivalencia').removeClass('btn-primary', !producto.TieneEquivalencias);
+                }
+
+                $modal.find('.linkEquivalencia').attr('href', baseUrl('Catalogo/Equivalencias', { codigoPieza: producto.CodigoPieza }));
+                obtenerDetalleProducto(producto);
+                cargarDatosProducto(producto);
+                $modal.modal('show');
+            });
+
+            $('.containerProductos').on('click', '.btnAgregarCarrito', function () {
+                var codigoProducto = $(this).data('producto');
+                var unidadVenta = $(this).data('unidadVenta');
+
+                if (!codigoProducto) {
+                    notificarWarning('No se ha especificado el producto');
+                    return;
+                }         
+
+                var htmlOpciones = '';
+
+                for (var i = 1; i < 5; i++) {
+                    var unidad = ' unidades';
+                    var unidades = i * unidadVenta;
+
+                    if (unidades === 1) unidad = ' unidad';
+
+                    htmlOpciones += '<li data-unidad-venta="' + unidadVenta +'" data-unidades="' + unidades + '" data-unidad-venta="' + unidadVenta+'">' + unidades + unidad + '</li>';
+                }
+
+                htmlOpciones += '<li data-unidad-venta="' + unidadVenta +'" data-unidades="mas">Más...</li>';
+
+                var $modelCant = $('#modelCant');
+                $modelCant.find('#codigoProductoSelectUnidades').val(codigoProducto);
+                $modelCant.find('.selectUnidades').html(htmlOpciones);
+                $modelCant.modal('show');
+            });
+
+            $('#modelCant').on('click', '.selectUnidades li', function () {
+                var codigoProducto = $('#codigoProductoSelectUnidades').val();
+                var unidades = $(this).data('unidades');
+                var unidadVenta = $(this).data('unidadVenta');
+
+                if (unidades === 'mas') { 
+                    input('Ingrese cantidad', function (value) {
+                        var cantidad = parseInt(value);
+
+                        if (isNaN(cantidad) || cantidad < 1) {
+                            notificarWarning('Ingrese una cantidad válida');
+                            return;
+                        }
+
+                        //if (cantidad % unidadVenta !== 0) {
+                        //    notificarWarning('Cantidad no válida. La unidad de venta es ' + unidadVenta);
+                        //    return;
+                        //}
+
+                        //alert(unidadVenta);
+
+                        agregarAlCarrito(cantidad, codigoProducto, true, unidadVenta, function () {
+                            notificarSuccess('Producto agregado al carrito');
+                            $('#modelCant').modal('hide');
+                        });
+                    }, 'number');
+                    return;
+                }
+
+                if (unidades <= 0) {
+                    notificarWarning('Ingrese una cantidad válida');
+                    return;
+                }
+
+                agregarAlCarrito(unidades, codigoProducto, true, unidadVenta, function () {
+                    notificarSuccess('Producto agregado al carrito');
+                    $('#modelCant').modal('hide');
+                });
+            });
+
+            $('#modalDetalleProducto').on('click', '.btnAgregarCarrito', function () {
+                var codigoProducto = $(this).data('producto');
+                if (!codigoProducto) {
+                    notificarWarning('Error: No se ha especificado el producto');
+                    return;
+                }
+                var $modelCant = $('#modelCant');
+                $modelCant.find('#codigoProductoSelectUnidades').val(codigoProducto);
+                $modelCant.modal('show');
+            });
+
+            $('.btnPaginaSiguiente').on('click', function () {
+                cargarPaginaSiguiente();
+            });
+        });
+
+        function obtenerDetalleProducto(producto) {
+
+            var source = $("#template-detalleProducto").html();
+            var template = Handlebars.compile(source);
+            var html = template(producto);
+            $('#detalleProducto').html(html);
+
+            if (producto.TieneEquivalencias === true) {
+                $('.modal-footer .linkEquivalencia').addClass('btn-primary');
+            }
+            else {
+                $('.modal-footer .linkEquivalencia').attr('disabled', !producto.TieneEquivalencias);
+                $('.modal-footer .linkEquivalencia').attr('href', '#');
+                $('.modal-footer .linkEquivalencia').removeClass('btn-primary', !producto.TieneEquivalencias);
+            }
+        }
+
+        function ObtenerMarcasPorRubro() {
+            var codigoRubro = $('#CodigoRubro').val();
+            let url = baseUrl('/Catalogo/MarcasPorRubro');
+
+            if ($('#CodigoRubro').val() == '') {
+                return;
+            }
+            if (bloqueadorMarca === false) {
+                $('.cboMarca option').remove();
+
+                $.ajax({
+                    type: 'post',
+                    url: url,
+                    dataType: 'json',
+                    data: { codigoRubro: codigoRubro },
+                    success: function (states) {
+
+
+                        $.each(states, function (i, state) {
+                            $('.cboMarca').append('<option value=' + state.Value + ">" + state.Text + "</option>");
+                        });
+                    },
+                    error: function (ex) {
+
+                    }
+                });
+
+                return false;
+            }
+        }
+
+        function cargarDatosProducto(producto) {
+            // verificamos si el producto ya fue cargado (para evitar agregar los parámetros manuales)
+            if (!producto.GrupoParametros) {
+                // agregar código artículo y nro original como parámetros manuales
+                producto.Parametros.unshift({ Parametro: 'Nro. Original', Valor: producto.NumeroOriginal || '---' });
+                producto.Parametros.unshift({ Parametro: 'Cod. Articulo', Valor: producto.CodigoPieza });
+            }
+            
+            producto.TieneStock = producto.StockEstado === 'EN_STOCK';
+
+            var source = $("#template-detalleProducto").html();
+            var template = Handlebars.compile(source);
+
+            var html = template(producto);
+            $('#detalleProducto').html(html);
+
+            if (producto.TieneEquivalencias === true) {
+                $('#detalleProducto .linkEquivalencia').removeClass('btn-default');
+                $('#detalleProducto .linkEquivalencia').addClass('btn-primary');
+            }
+            else {
+                $('#detalleProducto .linkEquivalencia').attr('disabled', !producto.TieneEquivalencias);
+                $('#detalleProducto .linkEquivalencia').attr('href', '#');
+                $('#detalleProducto .linkEquivalencia').removeClass('btn-primary', !producto.TieneEquivalencias);
+            }
+        }
+
+        function cambiarPrecios() {
+            var calculadora = new CalculadoraPrecio();
+
+            $('.card-producto.calcular').each(function (index, card) {
+                var producto = $(this).data('producto');
+
+                var precioVigente = producto.PrecioVigente;
+                var precioVenta = calculadora.calcularPrecio(precioVigente);
+                var precioNeto = calculadora.calcularPrecioNeto(precioVigente);
+
+                $(this).find('.precioVenta').html('$ '+formatNumber(precioVenta));
+                $(this).find('.precioNeto').html('$ '+formatNumber(precioNeto));
+
+                $(this).removeClass('calcular');
+            });
+        }
+
+        function cargarPaginaSiguiente() {
+
+            var pagSig = Number.parseInt($('#Pagina').val()) + 1;
+
+            var url = updateQueryStringParameter($('.linkPaginacion').val(), 'Pagina', pagSig);
+
+            var $btnPaginaSiguiente = $('.btnPaginaSiguiente');
+            var $loading = $('#productos-loading');
+
+            $loading.show();
+            $btnPaginaSiguiente.hide();
+
+            $.get(url, function (response) {
+                $('.containerProductos').append(response.Data.ProductosHtmlMobile);
+
+                if (!response.Data.UltimaPagina) {
+                    $btnPaginaSiguiente.show();
+                }
+
+                $('#Pagina').val(pagSig);
+                _cargarPagina = true;
+                $loading.hide();
+            });
+        }
+
+        function hayPaginaSiguiente() {
+            return $('#ultimaPagina').val() === 'false';
+        }
+
+        function configurarCandado() {
+            if (bloqueadorMarca == true) {
+                $('#candado').removeClass('icon-lock-open');
+                $('#candado').addClass('icon-lock');
+            }
+            else {
+                $('#candado').addClass('icon-lock-open');
+                $('#candado').removeClass('icon-lock');
+            }
+
+            if (bloqueadorTipoAuto == true) {
+                $('#candadoTipo').removeClass('icon-lock-open');
+                $('#candadoTipo').addClass('icon-lock');
+            }
+            else {
+                $('#candadoTipo').addClass('icon-lock-open');
+                $('#candadoTipo').removeClass('icon-lock');
+            }
+        }
+
+        function obtenerCarrito(callback) {
+            var url = baseUrl('/Carrito/ObtenerCarrito');
+            $.ajax({
+                type: 'GET',
+                url: url,
+                dataType: 'json'
+            }).done(function (response) {
+                var items = response;
+                if (callback && typeof (callback) === 'function') {
+                    callback(items);
+                }
+            });
+        }
+    </script>
+}

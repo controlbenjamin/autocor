@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocor.Catalogo.Web", "Autocor.Catalogo.Web\Autocor.Catalogo.Web.csproj", "{C0D5F141-59DF-45DF-89CF-5ED9D04F94B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autocor.Servicios", "Autocor.Servicios", "{EEEDBF7B-77B2-41B9-8271-15F51BE61749}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocorApi.Dependencias.Ninject", "..\..\autocorapi\AutocorApi\AutocorApi.Dependencias.Ninject\AutocorApi.Dependencias.Ninject.csproj", "{D4D0134D-E14E-4802-BCE0-92993926503C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocorApi.Entidades", "..\..\autocorapi\AutocorApi\AutocorApi.Entidades\AutocorApi.Entidades.csproj", "{F9D22302-501C-4A1A-B236-A1C3D20E8E99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocorApi.Repositorios", "..\..\autocorapi\AutocorApi\AutocorApi.Repositorios\AutocorApi.Repositorios.csproj", "{402A6114-DC0C-4E8E-8D3E-89C05152E90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocorApi.Repositorios.Dapper", "..\..\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\AutocorApi.Repositorios.Dapper.csproj", "{828CC7AC-685A-4889-9804-227F72E6614E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutocorApi.Servicios", "..\..\autocorapi\AutocorApi\AutocorApi.Servicios\AutocorApi.Servicios.csproj", "{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0D5F141-59DF-45DF-89CF-5ED9D04F94B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0D5F141-59DF-45DF-89CF-5ED9D04F94B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0D5F141-59DF-45DF-89CF-5ED9D04F94B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0D5F141-59DF-45DF-89CF-5ED9D04F94B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D0134D-E14E-4802-BCE0-92993926503C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D0134D-E14E-4802-BCE0-92993926503C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D0134D-E14E-4802-BCE0-92993926503C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D0134D-E14E-4802-BCE0-92993926503C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D22302-501C-4A1A-B236-A1C3D20E8E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D22302-501C-4A1A-B236-A1C3D20E8E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D22302-501C-4A1A-B236-A1C3D20E8E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D22302-501C-4A1A-B236-A1C3D20E8E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{402A6114-DC0C-4E8E-8D3E-89C05152E90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402A6114-DC0C-4E8E-8D3E-89C05152E90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402A6114-DC0C-4E8E-8D3E-89C05152E90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402A6114-DC0C-4E8E-8D3E-89C05152E90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{828CC7AC-685A-4889-9804-227F72E6614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828CC7AC-685A-4889-9804-227F72E6614E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828CC7AC-685A-4889-9804-227F72E6614E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828CC7AC-685A-4889-9804-227F72E6614E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D4D0134D-E14E-4802-BCE0-92993926503C} = {EEEDBF7B-77B2-41B9-8271-15F51BE61749}
+		{F9D22302-501C-4A1A-B236-A1C3D20E8E99} = {EEEDBF7B-77B2-41B9-8271-15F51BE61749}
+		{402A6114-DC0C-4E8E-8D3E-89C05152E90E} = {EEEDBF7B-77B2-41B9-8271-15F51BE61749}
+		{828CC7AC-685A-4889-9804-227F72E6614E} = {EEEDBF7B-77B2-41B9-8271-15F51BE61749}
+		{80F30D5C-D27F-4673-B73D-9C9113A3A0AF} = {EEEDBF7B-77B2-41B9-8271-15F51BE61749}
+	EndGlobalSection
+EndGlobal

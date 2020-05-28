@@ -1,0 +1,194 @@
+﻿@model Autocor.Catalogo.Web.Models.ItemsCarritoViewModel
+@using Autocor.Catalogo.Web.Utils.Mensaje
+@{
+    ViewBag.Title = "Carrito";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    decimal total = Model.TotalPrecioOriginal;
+    
+}
+@section styles{
+    <style>
+        .table-productos tbody tr td {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width: 1px;
+        }
+        .alert-mensaje{
+            margin: auto;
+            margin-top: 4%;
+            margin-bottom: 5%;
+            width: 21%;
+        }
+    </style>
+}
+@{
+    bool hayProductos = Model.Items.Count() > 0;
+    string displayAlert = hayProductos ? "display:none" : "";
+    string displayTabla = hayProductos ? "" : "display:none";
+
+}
+<div class="alert alert-info alert-mensaje mensajeInfo" style="@displayAlert"><i class="icon-attention-circled"></i>No hay productos cargados.</div>
+<!--Tabla-->
+<div class="col-xs-12 col-md-12 ColumnaTabla columnaCarrito" style="margin-top: 1%;">   
+  
+
+    <div class="contenedor-tabla wrapper tablaCarrito" style="@displayTabla">
+        <div class="table-responsive tablaCarrito" style="margin-top: 1%;">
+            <table class="table table-striped table-condensed table-small table-small2 headerFixed table-productos tablaCarrito" id="tablaCarrito">
+                <thead>
+                    <tr>
+                        <th class="col-md-1 cabezera">Cantidad</th>
+                        <th class="col-md-1 cabezera">Unidad Venta</th>
+                        <th class="col-md-1 cabezera">Código</th>
+                        <th class="col-md-2 cabezera">Producto</th>
+                        <th class="col-md-2 cabezera">Rubro</th>
+                        <th class="col-md-2 cabezera">Precio Unitario</th>
+                        <th class="col-md-2 cabezera">Precio Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var r in Model.Items)
+                    {
+                        <tr data-producto="@r.CodigoPieza" data-unidad-venta="@r.Producto.UnidadVenta">
+                            <td class="col-cantidad">
+                                @r.Cantidad
+                            </td>
+                            <td class="text-right">@r.Producto.UnidadVenta</td>
+                            <td>
+                                @r.CodigoPieza
+                            </td>
+                            <td title="@r.Producto.Descripcion">
+                                @r.Producto.Descripcion
+                            </td>
+                            <td title="@r.Producto.Rubro.Descripcion">
+                                @r.Producto.Rubro.Descripcion
+                            </td>
+                            <td style="text-align:right">
+                                @r.Producto.Precio.ToString("C")
+                            </td>
+                            <td style="text-align:right">
+                                @r.SubTotalPrecioOriginal.ToString("C")
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--Contenedor carta producto Mobil-->
+<div class="container contenedorMobilCarrito">
+    <div class="containerProductos">
+        @foreach (var producto in Model.Items)
+        {
+            <div class="panel panel-default card-producto calcular" data-producto="@producto.CodigoPieza" data-unidad-venta="@producto.Producto.UnidadVenta">
+
+                <img src="@producto.Producto.UrlImagen" alt="@producto.Producto.Descripcion" class="img-responsive" onerror="setImageDefault(this);" style="width:100%;">
+
+                <div class="panel-body ">
+
+                    <h1 class="codigo-producto" style="text-align:center">@producto.CodigoPieza</h1>
+
+                    <div class="descripcion-producto">
+                        <strong>Producto:</strong>
+                        <p>@producto.Producto.Descripcion</p>
+                        <strong>Rubro:</strong>
+                        <p>@producto.Producto.Rubro.Descripcion</p>
+                        <strong>Unidad de Venta:</strong>
+                        <p>@producto.Producto.UnidadVenta</p>
+                        <strong>Cantidad:</strong>
+                        <p>@producto.Cantidad</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="precio">
+                        <div class="precioCartaProductoCarrito">
+                            <span>Precio Unitario:</span>
+                            <strong class="precioVenta precioPrincipal">
+                                @producto.Producto.Precio.ToString("C")
+                            </strong>
+                        </div>
+                        <div class="precioCartaProductoCarrito">
+                            <span>Precio Total:</span>
+                            <strong class="precioNeto precioPrincipal">
+                                @producto.SubTotalPrecioOriginal.ToString("C")
+                            </strong>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="panel-footer text-center">
+                    <button type="button" class="btn btn-primary btnModificarCantidad" style="width:100%;">
+                        Modificar cantidad
+                    </button>
+                    <button type="button" class="btn btn-primary btnEliminarItem" style="margin-top:2%;width:100%;">
+                        Eliminar producto
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!--Botonera-->
+<div class="flex-container">
+    <div class="flex-item">
+        <button type="button" class="btn btn-default botonera btnCantidad">Modificar Cantidad</button>
+        <button type="button" class="btn btn-default botonera btnEliminar">Eliminar Producto</button>
+        <button type="button" class="btn btn-default botonera btnVaciarCarrito">Vaciar Carrito</button>
+    </div>
+    <div class="flex-item2">
+        <div class="form-group">
+            <label for="txtObservacion" >Observaciones:</label>
+            <textarea class="form-control" rows="5" id="txtObservacion"></textarea>
+        </div>
+    </div>
+    <div class="flex-item">
+        <div class="form-group" style="text-align: right;">
+            <label for="usr" class="lblImporte">Importe Total:</label>
+            <input type="text" class="form-control txtTotal input-sm" id="usr" readonly value="@total.ToString("C")">
+            <button type="button" class="btn btn-primary btnRealizarPedido">Realizar Pedido</button>
+        </div>
+    </div>
+</div>
+
+<!--Contenedor Mobil-->
+<div class="contenedorMobil">
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-default botonera2 btnVaciarCarrito">Vaciar Carrito</button>
+        </div>
+        <div class="col-xs-12">
+            <label for="comment">Observaciones:</label>
+            <textarea class="form-control TextAreaMobile" rows="5" id="comment"></textarea>
+        </div>
+        <div class="col-xs-12">
+            <label for="usr" class="lblImporte lblImporteMobil">Importe Total:</label>
+            <input type="text" class="form-control txtTotal txtToalMobile input-sm" id="usr" readonly value="@total.ToString("C")">
+            <button type="button" class="btn btn-primary btnRealizarPedido btnRealizarPedidoMobile">Realizar Pedido</button>
+        </div>
+    </div>
+</div>
+
+@using (Html.BeginForm("InsertarPedido", "Carrito", FormMethod.Post,new { id = "formPedido" }))
+{
+    <input type="hidden" name="observaciones" value="" id="observaciones" />
+    <input type="hidden" name="total" value="@total" id="total" />
+}
+
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/js/keynavigator.js")"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/floatthead/2.0.3/jquery.floatThead.min.js"></script>
+
+    @*<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>*@
+    <script src="@Url.Content("~/Assets/plugins/handlebars/handlebars-v4.0.10.js")"></script>
+    <script src="@Url.Content("~/Assets/plugins/jscroll/jquery.jscroll.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun_carrito.js")"></script>
+    <script src="@Url.Content("~/Assets/js/comun.js")"></script>
+    <script src="~/Assets/js/carrito.js"></script>
+}

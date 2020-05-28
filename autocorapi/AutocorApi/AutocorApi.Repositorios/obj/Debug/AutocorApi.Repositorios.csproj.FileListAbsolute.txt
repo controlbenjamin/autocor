@@ -1,0 +1,41 @@
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb

@@ -1,0 +1,55 @@
+﻿@model Autocor.Catalogo.Web.Models.Filtros.FiltroProductoModel
+@{
+    var listaRubros = new SelectList(Model.Rubros, "Codigo", "Descripcion", Model.CodigoRubro);
+    var listaMarcas = new SelectList(Model.Marcas, "Codigo", "Descripcion", Model.CodigoMarca);
+    var listaTipo = new SelectList(Model.Tipos, "Codigo", "Descripcion", Model.CodigoTipoAuto);
+}
+<div class="row" style="margin-top: 1%;">
+    @using (Html.BeginForm("index", "Catalogo", FormMethod.Get, new { id = "formFiltros" }))
+    {
+        <div class="col-xs-12 col-md-3 Controles">
+            <div class="form-group form-group-sm">
+                <label for="exampleInputName2">Producto:</label>
+                @*<input type="text" class="form-control" id="exampleInputName2">*@
+                @Html.TextBoxFor(model => model.CriterioBusqueda, new { @class = "form-control input-sm txtProducto" })
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-3 Controles">
+            <div class="input-group">
+                <label class="lblFiltros">Rubro:</label>
+                @Html.DropDownListFor(model => model.CodigoRubro, listaRubros, " Todos ", new { @class = "form-control input-sm cboFiltros cboRubro" })
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-2 Controles">
+            <label class="lblFiltros">Marca:</label>
+            <div class="input-group">
+                @Html.DropDownListFor(model => model.CodigoMarca, listaMarcas, " Todos ", new { @class = "form-control input-sm cboMarca cboFiltros" })
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm btnBloquearMarca" type="button"><i id="candado" class="icon-lock-open"></i></button>
+                </span>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-2 Controles">
+            <label class="lblFiltros">Tipo Auto:</label>
+            <div class="input-group">
+                @Html.DropDownListFor(model => model.CodigoTipoAuto, listaTipo, " Todos ", new { @class = "form-control input-sm cboFiltros cboTipo" })
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-sm btnBloquearTipoAuto" type="button"><i id="candadoTipo" class="icon-lock-open"></i></button>
+                </span>
+            </div>
+        </div>
+
+        <div class="">
+            <label>&nbsp;</label>
+            <a class="btn btn-primary btn-xs btnBuscarFiltros btnBusca hidden-xs" title="Buscar"><i class="icon-search"></i>Buscar</a>
+            <a class="btn btn-danger btn-xs btnLimpiarFiltros hidden-xs" href="@Url.Action("Index", "Catalogo")" title="Limpiar filtros"><i class="icon-filter"></i></a>
+
+            <a class="btn btn-primary btn-xs btnBuscarFiltros btnBusca btnFiltroXs visible-xs" title="Buscar"><i class="icon-search"></i>Buscar</a>
+            <a class="btn btn-danger btn-xs btnLimpiarFiltros btnFiltroXs visible-xs" href="@Url.Action("Index", "Catalogo")" title="Limpiar filtros"><i class="icon-filter"></i>Limpiar Filtros</a>
+        </div>
+    }
+</div>
+

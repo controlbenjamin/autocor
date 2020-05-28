@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{80F30D5C-D27F-4673-B73D-9C9113A3A0AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutocorApi.Servicios</RootNamespace>
+    <AssemblyName>AutocorApi.Servicios</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Implementation\ServicioInstalaciones.cs" />
+    <Compile Include="Core\Implementation\ServicioToken.cs" />
+    <Compile Include="Core\Implementation\ServicioUsuarios.cs" />
+    <Compile Include="Core\Implementation\ServicioUsuariosWeb.cs" />
+    <Compile Include="Core\IServicioInstalaciones.cs" />
+    <Compile Include="Core\IServicioToken.cs" />
+    <Compile Include="Core\IServicioUsuarios.cs" />
+    <Compile Include="Core\IServicioUsuariosWeb.cs" />
+    <Compile Include="Dto\AltaClienteWebDto.cs" />
+    <Compile Include="Dto\Clientes\ClienteMinDto.cs" />
+    <Compile Include="Dto\ConsultaWebDto.cs" />
+    <Compile Include="Dto\FiltrosDto.cs" />
+    <Compile Include="Dto\InstalacionDto.cs" />
+    <Compile Include="Dto\RefreshTokenDto.cs" />
+    <Compile Include="Dto\UsuarioWebDto.cs" />
+    <Compile Include="Email\IConfiguracionEmail.cs" />
+    <Compile Include="Email\IEnviadorEmail.cs" />
+    <Compile Include="Email\Implementation\EnviadorEmail.cs" />
+    <Compile Include="Email\Implementation\MensajeEmail.cs" />
+    <Compile Include="Email\Implementation\ConfiguracionEmailDefault.cs" />
+    <Compile Include="Email\Implementation\ServicioEnvioEmail.cs" />
+    <Compile Include="Core\Implementation\ServicioActualizaciones.cs" />
+    <Compile Include="Core\Implementation\ServicioMiniCatalogo.cs" />
+    <Compile Include="Core\IServicioActualizaciones.cs" />
+    <Compile Include="Core\IServicioMiniCatalogo.cs" />
+    <Compile Include="Dto\ActualizacionDto.cs" />
+    <Compile Include="Dto\Carrito\EditItemCarritoDto.cs" />
+    <Compile Include="Dto\Carrito\ItemCarritoDto.cs" />
+    <Compile Include="Dto\ClienteAPIDto.cs" />
+    <Compile Include="Dto\Clientes\ClienteDto.cs" />
+    <Compile Include="Dto\ConfiguracionClienteDto.cs" />
+    <Compile Include="Dto\ConsultaDto.cs" />
+    <Compile Include="Dto\DescargaDto.cs" />
+    <Compile Include="Dto\EstadoPedidoDto.cs" />
+    <Compile Include="Dto\InicioSesionDto.cs" />
+    <Compile Include="Dto\MarcaDto.cs" />
+    <Compile Include="Dto\ParametroProductoDto.cs" />
+    <Compile Include="Dto\Pedidos\DetallePedidoDto.cs" />
+    <Compile Include="Dto\Pedidos\NuevoDetallePedidoDto.cs" />
+    <Compile Include="Dto\Pedidos\NuevoPedidoDto.cs" />
+    <Compile Include="Dto\Pedidos\PedidoDto.cs" />
+    <Compile Include="Dto\Productos\ProductoCarritoDto.cs" />
+    <Compile Include="Dto\Productos\ProductoMinDto.cs" />
+    <Compile Include="Dto\Productos\ProductoDto.cs" />
+    <Compile Include="Dto\RegistroDto.cs" />
+    <Compile Include="Dto\RubroDto.cs" />
+    <Compile Include="Dto\RubroMinDto.cs" />
+    <Compile Include="Dto\StockDto.cs" />
+    <Compile Include="Dto\TipoAutoDto.cs" />
+    <Compile Include="Dto\TipoAutoMinDto.cs" />
+    <Compile Include="Dto\UsuarioDto.cs" />
+    <Compile Include="Dto\Utils\PagedResultDto.cs" />
+    <Compile Include="Email\Implementation\ServicioEmailWebService.cs" />
+    <Compile Include="Core\Implementation\Pedidos\ServicioPedidos.cs" />
+    <Compile Include="Core\Implementation\Autenticacion\ServicioAutenticacion.cs" />
+    <Compile Include="Core\Implementation\ServicioCarrito.cs" />
+    <Compile Include="Core\Implementation\ServicioClientes.cs" />
+    <Compile Include="Core\Implementation\Pedidos\ServicioConsultaPedido.cs" />
+    <Compile Include="Core\Implementation\ServicioDescargas.cs" />
+    <Compile Include="Core\Implementation\ServicioIniciosSesion.cs" />
+    <Compile Include="Core\Implementation\ServicioMarcas.cs" />
+    <Compile Include="Core\Implementation\ServicioProductos.cs" />
+    <Compile Include="Core\Implementation\ServicioRubros.cs" />
+    <Compile Include="Core\Implementation\ServicioTiposAuto.cs" />
+    <Compile Include="Core\IServicioAutenticacion.cs" />
+    <Compile Include="Core\IServicioCarrito.cs" />
+    <Compile Include="Core\IServicioClientes.cs" />
+    <Compile Include="Email\IServicioEmail.cs" />
+    <Compile Include="Core\IServicioIniciosSesion.cs" />
+    <Compile Include="Core\IServicioMarcas.cs" />
+    <Compile Include="Core\IServicioRubros.cs" />
+    <Compile Include="Core\IServicioTiposAuto.cs" />
+    <Compile Include="Core\Pedidos\IServicioConsultaPedido.cs" />
+    <Compile Include="Core\IServicioDescargas.cs" />
+    <Compile Include="Core\IServicioProductos.cs" />
+    <Compile Include="Exceptions\ServiceValidationException.cs" />
+    <Compile Include="Mappings\MappingConfig.cs" />
+    <Compile Include="Core\Pedidos\IServicioPedidos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Validation\ServiceValidation.cs" />
+    <Compile Include="Web References\AutocorEmailTestWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutocorApi.Entidades\AutocorApi.Entidades.csproj">
+      <Project>{f9d22302-501c-4a1a-b236-a1c3d20e8e99}</Project>
+      <Name>AutocorApi.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AutocorApi.Repositorios\AutocorApi.Repositorios.csproj">
+      <Project>{402a6114-dc0c-4e8e-8d3e-89c05152e90e}</Project>
+      <Name>AutocorApi.Repositorios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AutocorEmailTestWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AutocorEmailTestWS\ws.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Externos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.autocor.com.ar/serviciosWeb/test/ws.php%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AutocorEmailTestWS\</RelPath>
+      <UpdateFromURL>http://www.autocor.com.ar/serviciosWeb/test/ws.php%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AutocorApi_Servicios_AutocorEmailTestWS_AutocorWebServices</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

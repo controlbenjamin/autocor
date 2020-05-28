@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AutocorApi.Servicios.Dto.Productos.ProductoBaseDto>
+
+@foreach (var a in Model)
+    {
+        string classOferta = a.TieneOferta ? "oferta" : string.Empty;
+        string classOfertaCodigo = a.TieneOferta ? "ofertaCodigo" : string.Empty;
+
+    <tr class="@classOferta" data-producto="@Json.Encode(a)">
+        <td class="col-md-1 codigoProductoLista">
+            @*@if (a.TieneOferta == true)
+            {
+                <img class="imgOferta" src="~/Assets/img/ofertas_icono_s.png" alt="Oferta" style="width: 20%;" title="Oferta!" />
+            }*@
+            <span class="codigoProducto @classOfertaCodigo">@a.CodigoPieza</span>
+        </td>
+        <td class="col-md-4" title="@a.Descripcion">
+            @a.Descripcion
+        </td>
+        <td class="col-md-2" title="@a.Rubro.Descripcion">
+            @a.Rubro.Descripcion
+        </td>
+        <td class="col-md-2" title="@a.Marca.Descripcion">
+            @a.Marca.Descripcion
+        </td>
+        <td class="col-md-2" title="@a.TipoAuto.Descripcion">
+            @a.TipoAuto.Descripcion
+        </td>
+        <td class="col-md-1" style="text-align:right">
+            @if (a.TieneOferta == true)
+            {
+               <span>Oferta</span>
+            }
+            @a.PrecioVigente.ToString("C2")
+        </td>
+    </tr>
+}

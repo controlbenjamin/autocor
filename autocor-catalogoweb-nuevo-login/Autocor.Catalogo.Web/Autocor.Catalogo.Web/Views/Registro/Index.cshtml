@@ -1,0 +1,306 @@
+﻿@using Autocor.Catalogo.Web.Utils.Mensaje
+@model Autocor.Catalogo.Web.Models.RegistroModel
+@{
+    Layout = "~/Views/Shared/_Login.cshtml";
+    var mensaje = ViewBag.Mensaje as MensajeWeb;
+
+}
+       
+<div class="panel panel-default panelRegistro">
+  <div class="panel-body">
+      @if (mensaje != null)
+      {
+        <div class="alert alert-@mensaje.CssContext">
+                    @if(!string.IsNullOrEmpty( mensaje.Titulo))
+                    {
+                        <strong>@mensaje.Titulo</strong>
+                    }
+
+                @mensaje.Texto
+
+        </div>
+      }
+                <h3 class="text-center">Nuevo Cliente</h3>
+
+        @using (Html.BeginForm("EnviarEmail", "Registro", FormMethod.Post, new { htmlAttributes = new { @class = "form-horizontal" } }))
+        {
+            @Html.AntiForgeryToken()
+
+                        <div class="col-md-12 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>Nombre de Fantasía:</label>
+                                    @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div><!--txtNombreFantasia-->
+
+                        <div class="col-md-12 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>Titular:</label>
+                                    @Html.EditorFor(model => model.Titular, new { htmlAttributes = new { @class = "form-control input-md", placeholder ="Ingrese el Titular del CUIT"} })
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Titular, "", new { @class = "text-danger" })
+                            </div>
+                        </div><!--txtTitular-->
+
+                        <div class="col-md-6 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>CUIT:</label>
+                                    @Html.EditorFor(model => model.CUIT, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                    @Html.ValidationMessageFor(model => model.CUIT, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div><!--txtCuit-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label class="control-label" for="TipoIVA">Tipo IVA:</label>
+                                <div>
+                                  @Html.DropDownListFor(model => model.TipoIVA,new SelectList(Model.ListadoTipoIva),"--seleccione el Tipo de IVA--", htmlAttributes: new {@class="form-control input-md" })
+                                </div>
+                            </div>
+                        </div><!--cboIva-->
+
+                        <div class="col-md-12 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>Ingresos Brutos:</label>
+                                    @Html.EditorFor(model => model.IngresosBrutos, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div><!--txtIngresoBruto-->
+
+                        <div class="col-md-6 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>Domicilio Comercial:</label>
+                                    @Html.EditorFor(model => model.DomicilioComercial, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div><!--txtDomicilio-->
+
+                        <div class="col-md-6 col-xs-12 col-sm-12 separadorTxt">
+                            <div class="form-group">
+                                <div>
+                                    <label>Cod. Postal:</label>
+                                    @Html.EditorFor(model => model.CodigoPostal, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div><!--txtCodPosta-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label>Localidad:</label>
+                                <div>
+                                    @Html.EditorFor(model => model.Localidad, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div><!--txtLocalidad-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label class="control-label" for="Provincia">Provincia:</label>
+                                <div>
+                                    @Html.DropDownListFor(model => model.Provincia, new SelectList(Model.ListadoProvincias), "--seleccione provincia--", htmlAttributes: new {@class= "form-control input-md" })
+                                </div>
+                            </div>
+                        </div><!--cboProvincia-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label for="Telefono">Teléfono:</label>
+                                <div>
+                                    @Html.EditorFor(model => model.TelCaracteristica, new { htmlAttributes = new { @class = "form-control input-md TelefonoCaracteristica" } })
+                                    &nbsp
+                                    @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control input-md TelefonoNumero" } })
+                                </div>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.TelCaracteristica, "", new { @class = "text-danger" })
+                        </div><!--txtTelefono-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label>E-Mail:</label>
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div><!--txtEmail-->
+
+                        <div class="col-md-6 separadorTxt">
+                            <div class="form-group">
+                                <label for="Telefono">Celular:</label>
+                                <div>
+                                    @Html.EditorFor(model => model.CelCaracteristica, new { htmlAttributes = new { @class = "form-control input-md TelefonoCaracteristica" } })
+                                    @Html.EditorFor(model => model.Celular, new { htmlAttributes = new { @class = "form-control input-md TelefonoNumero" } })
+                                </div>
+                            </div>
+                        </div><!--txtCelular-->
+
+                        <div class="col-md-12 separadorTxt">
+                            <div class="form-group">
+                                <label>Marcas que comercializa:</label>
+                                <textarea class="form-control  TextAreaMensaje" id="MarcasComercializa" name="MarcasComercializa"></textarea>
+                            </div>
+                        </div><!--txtMarca-->
+
+                        <div class="col-md-12 separadorTxt">
+                            <div class="form-group">
+                                <label>Rubros que comercializa:</label>
+                                <textarea class="form-control  TextAreaMensaje" id="RubrosComercializa" name="RubrosComercializa"></textarea>
+                            </div>
+                        </div><!--txtRubro-->
+
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <div class="separadorTxt">
+                                    <label>Flete Habitual:</label>
+                                    @Html.EditorFor(model => model.FleteHabitual, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div> <!--txtFlete-->
+
+                        <div class="col-md-6 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <div class="separadorTxt">
+                                    <label >Flete alternativo:</label>
+                                    @Html.EditorFor(model => model.FleteAlternativo, new { htmlAttributes = new { @class = "form-control input-md" } })
+                                </div>
+                            </div>
+                        </div> <!--txtFleteAlternativo-->
+
+                        <div class="col-md-12 col-xs-12 col-sm-12">
+                          <div class="form-group">
+                              <hr />
+                              <label>Contacto</label>
+                          </div>
+                      </div><!--InfoContacto-->           
+
+                        <div class="col-md-4 col-xs-12 col-sm-12 div-contacto">
+                            <div class="form-group">
+                                <label>Nombre:</label>
+                                <input type="text" class="form-control nameContacto" name="Contactos[0].Nombre">
+                                <input type="text" class="form-control nameContacto" name="Contactos[1].Nombre">
+                                <input type="text" class="form-control nameContacto" name="Contactos[2].Nombre">
+                            </div>
+                        </div><!--txtNombreContacto-->
+
+                        <div class="col-md-4 col-xs-12 col-sm-12 div-contacto">
+                            <div class="form-group">
+                                <label for="Telefono">Función:</label>
+                                <input type="text" class="form-control nameContacto" name="Contactos[0].Funcion">
+                                <input type="text" class="form-control nameContacto" name="Contactos[1].Funcion">
+                                <input type="text" class="form-control nameContacto" name="Contactos[2].Funcion">
+                            </div>
+                        </div><!--txtFuncion-->
+
+                        <div class="col-md-4 col-xs-12 col-sm-12 div-contacto">
+                            <!--Fecha-->
+                            <div class="form-group">
+                                <label for="Telefono">Cumpleaños:</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" name="Contactos[0].FechaNacimiento"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>                                     
+                                                                   
+                                <div class="input-group date campoFecha">  
+                                    <input type="text" class="form-control" name="Contactos[1].FechaNacimiento"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>                                     
+                                                                   
+                                <div class="input-group date campoFecha">  
+                                    <input type="text" class="form-control" name="Contactos[2].FechaNacimiento"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                </div>
+                            </div>
+                        </div><!--fecha-->
+                        
+                       <!--Menu de contacto  para celulares-->
+
+                        <div class="col-md-4 col-xs-12 col-sm-12  div-ContactoResponsive">
+                            <div class="form-group">
+                                <label for="Telefono">Nombre:</label>
+                                <input type="text" class="form-control nameContacto" name="">
+                            </div>
+                                <div class="form-group">
+                                    <label for="Telefono">Función:</label>
+                                    <input type="text" class="form-control nameContacto" name="">
+                                </div>
+                               <div class="form-group">
+                                    <label for="Telefono">Fecha:</label>
+                                    <div class="input-group date">
+                                        <input type="text" class="form-control" name="Contactos[0].Fecha"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                    </div>
+                                </div>
+                        </div>
+
+                       <!--Template Contactos-->
+
+                        <template id="TemplateContacto">
+                              <div class="col-md-4 col-xs-12 col-sm-12  div-ContactoResponsive">
+                                  <hr />
+                                  <div class="form-group">
+                                      <label for="Telefono">Nombre:</label>
+                                      <input type="text" class="form-control nameContacto" name="">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="Telefono">Función:</label>
+                                      <input type="text" class="form-control nameContacto" name="">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="Telefono">Fecha:</label>
+                                      <div class="input-group date">
+                                          <input type="text" class="form-control" name=""><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </template>
+
+                       <!--Fin Template-->
+
+                        <div class="col-md-12 col-xs-12 col-sm-12 div-ContactoResponsive">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-exito" id="Registrar">Añadir mas contactos</button>
+                            </div>
+                        </div><!--boton Añadir mas contactos-->
+
+                        <div class="col-md-12 col-xs-12 col-sm-12">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-exito">Registrarse</button>
+                                <a href="@Url.Action("Index", "Login")" class="btn btn-cancel">Cancelar</a>
+                            </div>
+                    </div><!--botonera-->
+        }
+   </div>
+</div>
+
+@section scripts
+    {
+   <script src="@Url.Content("~/Assets/plugins/datepicker/js/bootstrap-datepicker.min.js")"></script>
+   <script src="@Url.Content("~/Assets/plugins/datepicker/locales/bootstrap-datepicker.es.min.js")"></script>
+
+    <script type="text/javascript">
+        $('.input-group.date').datepicker({
+            language: "es"
+        });
+
+        function añadir()
+        {
+            var plantilla = document.getElementById('TemplateContacto');
+            var codigo = plantilla.content.cloneNode(true);
+            var body = document.getElementsByClassName('panel-body');
+            plantilla.appendChild(codigo);
+            document.getElementById("TemplateContacto").style.display = "inline-block";
+            console.log('se añade un pedaso de html');
+        }
+
+        $(document).ready(function () {
+            $("#Registrar").click(function () {
+                añadir();
+            });
+        });
+
+    </script>
+}
+
+
+@* @Html.DropDownListFor(model => model.CodigoCliente, listaClientes, htmlAttributes: new { @class = "select2", style = "width:100%" }) *@

@@ -1,0 +1,112 @@
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csprojAssemblyReference.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CoreCompileInputs.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CopyComplete
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\clean 2 - catalogo web autocor\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csprojAssemblyReference.cache
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CopyComplete
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.Dapper.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Entidades.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Repositorios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutocorApi.Servicios.dll.config
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\BCrypt.Net-Next.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Dapper.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.pdb
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Slapper.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\Ninject.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\bin\Debug\AutoMapper.xml
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csprojAssemblyReference.cache
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.csproj.CopyComplete
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.dll
+Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios.Dapper\obj\Debug\AutocorApi.Repositorios.Dapper.pdb

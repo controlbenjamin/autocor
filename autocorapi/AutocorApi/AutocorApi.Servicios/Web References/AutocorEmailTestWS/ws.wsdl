@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.autocor.com.ar/soap/AutocorWebServices" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.autocor.com.ar/soap/AutocorWebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.autocor.com.ar/soap/AutocorWebServices">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="mailConsultasRequest">
+    <wsdl:part name="name" type="xsd:string" />
+    <wsdl:part name="email" type="xsd:string" />
+    <wsdl:part name="msj" type="xsd:string" />
+    <wsdl:part name="asunto" type="xsd:string" />
+    <wsdl:part name="t" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="mailConsultasResponse">
+    <wsdl:part name="return" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:message name="mailHtmlRequest">
+    <wsdl:part name="mensajeHtml" type="xsd:string" />
+    <wsdl:part name="reply" type="xsd:string" />
+    <wsdl:part name="asunto" type="xsd:string" />
+    <wsdl:part name="destino" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="mailHtmlResponse">
+    <wsdl:part name="return" type="xsd:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="AutocorWebServicesPortType">
+    <wsdl:operation name="mailConsultas">
+      <documentation>Envio de consultas a Autocor</documentation>
+      <wsdl:input message="tns:mailConsultasRequest" />
+      <wsdl:output message="tns:mailConsultasResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="mailHtml">
+      <documentation>Envio de e-mail Autocor</documentation>
+      <wsdl:input message="tns:mailHtmlRequest" />
+      <wsdl:output message="tns:mailHtmlResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutocorWebServicesBinding" type="tns:AutocorWebServicesPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="mailConsultas">
+      <soap:operation soapAction="http://www.autocor.com.ar/serviciosWeb/test/ws.php/mailConsultas" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://www.autocor.com.ar/serviciosWeb/test" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://www.autocor.com.ar/serviciosWeb/test" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mailHtml">
+      <soap:operation soapAction="http://www.autocor.com.ar/serviciosWeb/test/ws.php/mailHtml" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="http://www.autocor.com.ar/serviciosWeb/test" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="http://www.autocor.com.ar/serviciosWeb/test" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AutocorWebServices">
+    <wsdl:port name="AutocorWebServicesPort" binding="tns:AutocorWebServicesBinding">
+      <soap:address location="http://www.autocor.com.ar/serviciosWeb/test/ws.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

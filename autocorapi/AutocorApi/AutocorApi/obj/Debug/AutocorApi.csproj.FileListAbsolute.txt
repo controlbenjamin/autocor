@@ -1,0 +1,464 @@
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\ApplicationInsights.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.dll.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Antlr3.Runtime.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Servicios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Castle.Core.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.Web.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Cors.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Newtonsoft.Json.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.ContextPreservation.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.Factory.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.NamedScope.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.OwinHost.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Owin.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Swashbuckle.Core.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Net.Http.Formatting.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Cors.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Helpers.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.Owin.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.WebHost.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Mvc.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Optimization.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Razor.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\WebActivatorEx.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\WebGrease.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutoMapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Entidades.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Dapper.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Servicios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Servicios.dll.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Antlr3.Runtime.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.Web.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Cors.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Newtonsoft.Json.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.ContextPreservation.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.Factory.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Extensions.NamedScope.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.OwinHost.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Net.Http.Formatting.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Helpers.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.Owin.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Http.WebHost.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Mvc.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Optimization.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.Razor.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutoMapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\AutocorApi.Entidades.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\Dapper.xml
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\obj\Debug\AutocorApi.csprojAssemblyReference.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\obj\Debug\AutocorApi.csproj.CoreCompileInputs.cache
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\obj\Debug\AutocorApi.csproj.CopyComplete
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\obj\Debug\AutocorApi.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\obj\Debug\AutocorApi.pdb
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csc.exe
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csc.exe.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csc.rsp
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csi.exe
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csi.exe.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\csi.rsp
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.AppContext.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Console.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Claims.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\vbc.exe
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\vbc.exe.config
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\vbc.rsp
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\extrados\Documents\simon.chuquel\workplace\autocor-api\AutocorApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\ApplicationInsights.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csc.exe
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csc.exe.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csc.rsp
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csi.exe
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csi.exe.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\csi.rsp
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.AppContext.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Console.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.IO.Compression.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.IO.Pipes.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Claims.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Threading.Thread.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.ValueTuple.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\vbc.exe
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\vbc.exe.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\vbc.rsp
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\VBCSCompiler.exe
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Antlr3.Runtime.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Servicios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Castle.Core.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.Web.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.ApplicationInsights.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Cors.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Newtonsoft.Json.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.ContextPreservation.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.Factory.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.NamedScope.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.OwinHost.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.WebHost.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.WebHost.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Owin.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Swashbuckle.Core.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Net.Http.Formatting.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Cors.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Helpers.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.Owin.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.WebHost.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Mvc.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Optimization.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Razor.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.Razor.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\WebActivatorEx.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\WebGrease.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutoMapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Entidades.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Dapper.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Servicios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Servicios.dll.config
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Antlr3.Runtime.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.Web.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.ApplicationInsights.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Cors.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Newtonsoft.Json.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.ContextPreservation.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.Factory.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Extensions.NamedScope.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.OwinHost.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.Common.WebHost.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Net.Http.Formatting.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Helpers.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.Owin.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Http.WebHost.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Mvc.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Optimization.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.Razor.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\System.Web.WebPages.Razor.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Repositorios.Dapper.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutoMapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\AutocorApi.Entidades.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\Dapper.xml
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\obj\Debug\AutocorApi.csprojAssemblyReference.cache
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\obj\Debug\AutocorApi.csproj.CopyComplete
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\obj\Debug\AutocorApi.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\obj\Debug\AutocorApi.pdb
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\BCrypt.Net-Next.dll
+C:\Users\rodrigo.carrion\Documents\Simon Chuquel\proyectos\autocor api\autocor-api\AutocorApi\bin\BCrypt.Net-Next.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\ApplicationInsights.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csc.exe
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csc.exe.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csc.rsp
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csi.exe
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csi.exe.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\csi.rsp
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.AppContext.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Collections.Immutable.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Console.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Diagnostics.Process.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.IO.Compression.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.IO.FileSystem.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.IO.Pipes.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Reflection.Metadata.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.AccessControl.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Claims.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Security.Principal.Windows.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Threading.Thread.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.ValueTuple.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Xml.XmlDocument.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Xml.XPath.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\vbc.exe
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\vbc.exe.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\vbc.rsp
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\VBCSCompiler.exe
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\roslyn\VBCSCompiler.exe.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Antlr3.Runtime.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Servicios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Castle.Core.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.Agent.Intercept.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.DependencyCollector.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.Web.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.WindowsServer.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.ApplicationInsights.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Cors.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Security.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Security.OAuth.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Web.Infrastructure.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Newtonsoft.Json.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.ContextPreservation.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.Factory.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.NamedScope.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.OwinHost.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.WebHost.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.WebHost.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Owin.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Swashbuckle.Core.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Diagnostics.DiagnosticSource.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Net.Http.Formatting.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Cors.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Helpers.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.Owin.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.WebHost.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Mvc.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Optimization.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Razor.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.Deployment.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.Razor.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\WebActivatorEx.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\WebGrease.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Repositorios.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Repositorios.Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutoMapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Entidades.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Dapper.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\BCrypt.Net-Next.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Dependencias.Ninject.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Dependencias.Ninject.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Servicios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Servicios.dll.config
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Antlr3.Runtime.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.DependencyCollector.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.Web.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AI.WindowsServer.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.ApplicationInsights.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Cors.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Security.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Microsoft.Owin.Security.OAuth.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Newtonsoft.Json.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.ContextPreservation.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.Factory.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Extensions.NamedScope.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.OwinHost.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.Common.WebHost.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.OwinHost.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Ninject.Web.WebApi.WebHost.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Diagnostics.DiagnosticSource.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Net.Http.Formatting.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Helpers.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.Owin.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Http.WebHost.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Mvc.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Optimization.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.Razor.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.Deployment.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\System.Web.WebPages.Razor.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Repositorios.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Repositorios.Dapper.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutoMapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\AutocorApi.Entidades.pdb
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\Dapper.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\bin\BCrypt.Net-Next.xml
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\obj\Debug\AutocorApi.csprojAssemblyReference.cache
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\obj\Debug\AutocorApi.csproj.CopyComplete
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\obj\Debug\AutocorApi.dll
+D:\simon.chuquel\autocorapi\AutocorApi\AutocorApi\obj\Debug\AutocorApi.pdb

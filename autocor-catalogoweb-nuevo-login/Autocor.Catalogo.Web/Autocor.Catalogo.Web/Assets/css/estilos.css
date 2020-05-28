@@ -1,0 +1,1095 @@
+body, 
+html{
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	position: relative;  
+}
+
+body{
+
+}
+.selectUnidades li{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.btnLimpiarFiltros{
+    margin-left: 3.5%;
+    margin-top:2%;
+    padding:4px 5px;
+    font-size:12px;
+}
+
+.mensajeRegistro {
+    font-size: medium;
+    color: red;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mensajeRegistro h1{
+    color: red;
+}
+
+.mensajeRegistroCompleto {
+    font-size: medium;
+    color: blue;
+}
+
+.tablaBorderMensajeRegistro {
+    border: solid;
+    border-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+.table-responsive {
+    overflow-x: hidden;
+}
+
+.btnBuscarFiltros{
+    width: 9%;
+    margin-left: 0%;
+    margin-top: 2%;
+    padding: 4px 5px;
+    font-size: 12px;
+}
+
+.btnCandado{
+    float:right;
+    font-size: 12px;
+}
+
+.precio{
+    width:90%;
+}
+.divImagenLogo{
+    margin-right:219px;
+}
+.precioCartaProductoCarrito{
+    text-align:center;
+}
+
+.precioCartaProductoCarrito strong{
+    float:right;
+}
+
+.grupoParametro {
+    margin-top:1%;
+}
+
+.panelRegistro {
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+    height: 180%;
+}
+
+.campoFecha {
+    margin-top:2%;
+}
+
+.nameContacto {
+margin-top:2%;
+}
+
+.separadorTxt {
+    margin-top:1%;
+}
+
+.txtCantidadCarrito {
+
+    width: 75%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.txtPrecioProducto {
+            width: 46%;
+            background-color: green;
+            text-align: right;
+            color: white;
+            padding-right: 5px;
+            height:36px;
+}
+.txtPrecioProductoI{
+    width:58%;
+    float:right;
+}
+
+#txtPrec{
+    max-width: 40%;
+    width: 40%;
+    text-align: right;
+}
+
+.txtPrecioI{
+    line-height:36px;
+}
+
+#detalle-producto{
+   /*/ border-top: 1px solid rgba(0, 128, 0, 0.6);*/
+    padding-top: 18px;
+}
+
+.detalleProductoIncorporacion{
+    padding-top:0%!important;
+    margin-top:0%!important;
+}
+
+.TelefonoCaracteristica{
+    width:20%;
+    float:left;
+}
+
+.TelefonoNumero{
+    width:75%;
+    float:right;
+}
+
+.img-producto{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+}
+
+.estiloBotonCarrito{
+    float:right;
+    width:60%;
+}
+
+.logoOferta{
+    float:left;
+}
+
+.contenedor-Stock{
+    text-align:center;
+}
+.tituloStock{
+    text-align:center;
+    display:block;
+}
+
+dd{
+    word-wrap: break-word;
+}
+
+.table{
+    cursor:default;
+}
+
+.filaEquivalencia{
+    background-color:#d9534f;
+    color:#fff;
+}
+
+.parametros{
+    padding: 0 10px;
+    border-radius: 2px;
+    line-height: 34px;
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+/*menu*/
+.divColumn{
+	height: 100px;
+}
+
+.linkConsulta{
+    color: #005094;
+    text-decoration: underline;
+}
+
+.descripcion-producto{
+    word-wrap: break-word;
+}
+
+.btnConsultar {
+    text-align: right;
+    margin-top: 4%;
+}
+
+.btn-exito{
+    background-color:#005f1d;
+    color: #fff;
+    border: none;
+}
+
+.btn-exito:hover{
+    background-color:#297340;
+    cursor:pointer;
+    color:white;
+}
+
+.btn-exito:active{
+     background-color:#297340;
+     cursor:pointer;
+     color:white;
+}
+
+.formContacto{
+    margin: auto;
+    width: 50%;
+}
+
+.formContacto2{
+    margin:auto;
+    width:50%;
+    border-color: #fff !important;
+}
+
+.loginrow{
+    margin-bottom:2%;
+}
+
+.mainFooter{
+    margin-top:1%;
+    position:fixed;
+}
+
+.btn-cancel {
+    background-color:#dc8a16;
+    color:#fff;
+    border-color:#c57a0f;
+}
+
+.btn-cancel:hover{
+    background-color:#eea236;
+    cursor:pointer;
+    color:white;
+}
+
+.btn-cancel:active {
+    background-color:#eea236;
+    cursor:pointer;
+    color:white;
+}
+
+.textoBotonesMenu{
+	color: white;
+	font-size: 79%;
+	font-family: "Lato";
+    display: inline-block;
+}
+
+@media(max-width: 425px)
+{
+	.divColumn{
+		height: 66px;
+	}
+	#imagen2{
+		width: 194%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 430px){
+	#imagen2{
+		padding: 25px;
+		width: 165%;
+	}
+
+	.divColumn{
+		height: 90px;
+	}
+	.botonesMenu{
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+}
+
+/*termina menu*/
+
+/*
+    catalogo
+*/
+
+ #precioTexto{
+            margin-left:52px;
+}
+
+.parametros-productos {
+     background-color:green;
+     color: white;
+     font-size:13px;
+     height:150px;
+     margin-right: 1.2%;
+}
+
+.cuadroImagen{
+    border: solid 3px;
+    border-color: green;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.botonesMenu{
+	height: 77%;
+	margin-top: 1%;
+	text-align: center;
+}
+
+.textoInicio{
+    display:block!important;
+}
+
+#imagen{
+	padding-top: 15px;
+	display:block;
+	margin:0 auto 0 auto;
+	padding-bottom: 15px;
+}
+
+.ImagenModal{
+    width:98%;
+}
+
+a:hover{
+	text-decoration:inherit;
+}
+
+.login{
+	width: 500px;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
+	padding: 15px;
+    margin:auto;
+	color: green;
+	background: white;
+}
+
+.ubicacion{
+	    margin-top: 10%;
+}
+
+.miCuenta{
+	margin-top: 2%;
+}
+
+.Contacto{
+	margin-top: 2%;
+    margin: 0 auto;
+}
+
+.barraLateral{
+	height: 380px;
+    background-color: green;
+    padding: 1% 2% 2%;
+}
+
+.btnAct{
+    float:right;
+}
+
+.btnConfig{
+    width:100%;
+}
+
+.botonesUbicacion {
+    margin-left: 20%;
+}
+
+textarea.form-control {
+    height: 120px;
+    max-width:100%;
+    max-height:120px;
+}
+
+.menu_bar{
+			display: none;
+}
+
+.divColumn{
+			border-bottom:solid 1px;
+}
+
+#imagenCatalogo{
+	margin-left: -4%;   		
+    padding: 10px;
+	float:left;
+}
+
+.btnNav:hover{
+			cursor: pointer;
+		}
+
+.imagenBotonesMenu{
+	width: 50%;
+	margin-top: 9px;
+}
+
+/*Estilos del carrito*/
+.menuBotones{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.btnFiltroXs{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -8%;
+    margin-bottom: 10%;
+}
+
+.botonera{
+	width: 100%;
+    margin-bottom: 5%;
+}
+
+.txtTotal{
+	background-color: #009000;
+    color: black;
+    text-align: right;
+}
+
+.txtCant{
+    background-color: #009000;
+    color: #ffffff;
+    text-align: right;
+    
+}
+
+.btnRealizarPedido{
+	margin-top: 20%;
+    float: right;
+    width: 100%;
+}
+
+.btnCantidad{
+    margin-top: 4%;
+}
+
+.btnAgregarCarro{
+    padding-right: 13%;
+    width: 100%;
+}
+
+.divBoton{
+    padding-right: 2%;
+}
+
+.formCantidad{
+    float: right;
+}
+
+.contenedorImporte
+{
+	text-align: right;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 99%;
+    height: 250px;
+}
+
+#precioTexto {
+    margin-left: 73px;
+}
+
+.flex-item {
+    width: 20%;
+    height: 100px;
+    margin:10px 0px 10px 10px;
+}
+
+.flex-item2{
+    width: 56%;
+    height: 100px;
+    margin: 10px;
+}
+
+/*terminan los estilos del carrito*/
+.ColumnaStock{
+    padding-left:10%;
+}
+
+.columnaPrecioVenta{
+    margin-top: 5px;
+    padding-left: 25%;
+    float:right;
+    width:65%;
+    padding-right:11px;
+}
+
+.btnEquivalencia{
+    margin-bottom:5px;margin-left: 5%;margin-right: 13%;
+}
+
+
+.divCantidadCarrito{
+    margin-top:1%;
+}
+.txtCantidadCarritoDetalle{
+    width:25%;
+}
+
+.cuadroImagenDetalle{
+    height:151px;
+}
+
+/*parte mobil carrito*/
+.btnRealizarPedidoMobile{
+				margin-top: 2%;
+		}
+.botonera2{
+			margin-top: 2%;
+			width: 100%;
+			margin-bottom: 1%;
+		}
+.TextAreaMobile{
+			margin-bottom: 1%;
+		}
+.lblImporteMobil{
+			margin-top:1%;
+		}
+.contenedorMobilCarrito{
+      margin-top: 10%;
+}
+
+.btnAgregarCarritoIncor{
+        width:55%;
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+		     .contenedorMobil{
+					 display: none;
+		    }
+             .contenedorMobilCarrito{
+                 display:none;
+             }
+             .contenedorDescargasMobil{
+                 display:none;
+             }
+}
+@media only screen and (max-width: 768px) and (min-width: 100px){
+				 .contenedorMobil{
+						display:block;
+				}
+                 .contenedorMobilCarrito{
+                     display:block;
+                 }
+                 .contenedorDescargaDesktop{
+                     display:none;
+                 }
+                 .contenedorDescargasMobil{
+                     display:block;
+                 }
+				.flex-container{
+					display: none;
+				}
+				.btnRealizarPedidoMobile{
+					font-size: 100%;
+				}
+				.lblImporteMobil{
+					font-size: 100%;
+				}
+                .btnBuscarFiltros{
+                    width:90%;
+                    margin-top:1%;
+                }
+		}
+/*Fin parte mobil*/
+
+@media screen and (max-width:800px ) {
+			.btnNav{
+				 background-color: #d6d6da!important;
+   				 height: 100%!important;
+			}
+			.menu_bar{
+				background-color: #1E1E86;
+				left: -100%;
+				width: 100%;
+			}
+			.Ocultar{
+				display: none;
+			}
+		
+			.imagenBotonesMenu{
+				width: 10%!important;
+			}
+			#imagenCatalogo{
+                margin: 0px;
+                padding: 0px;
+                padding-top: 10px;
+                padding-left: 9px;
+			}
+			.botonesMenu{
+				height: 9%;
+				margin-top: 0%!important;
+				text-align: left;
+			}
+			.divColumn{
+				border: none;
+			}
+			.btnNav span{
+				    float: right;
+				    margin-right: 3%;
+				    margin-top: 2%;
+				    font-size: 60px;
+				    color: #006407;
+			}
+		}
+
+@media only screen and (max-width: 1440px) and (min-width: 800px){
+			.btnNav{
+				display: none;
+			}
+		}
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+			#imagenCatalogo{
+                margin-top: 10px;
+				width: 28%;
+			}
+			.btnNav span{
+				margin-top: 0px;
+			}
+            .cuadroImagen {
+                height: 137px;
+                width: 100%;
+            }
+            .btnEquivalencia{
+                width: 100% ;
+	            margin-right:0%;
+	            margin-left:0%;
+	            margin-bottom:10px;
+            }
+            .ColumnaStock{
+                 padding-left: 2%;
+                 margin-top: 2%;
+            }
+            .columnaPrecioVenta{
+                 padding-left: 12%;
+            }
+            .parametros-productos{
+                height: 203px;
+                margin-left: 1%;
+	            margin-top: 1%;
+            }
+
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+			#imagenCatalogo{
+				    width: 42%;
+                    margin-top: 3%;
+    				padding: 0px;
+                    margin-left: 8px;
+			}
+			.btnNav span{
+				margin-top: 1%;
+				 font-size: 39px;
+			}
+			.imagenBotonesMenu{
+			margin-top: 6px;
+		}
+            .columnaPrecioVenta{
+                width:100%;
+                padding-left:6%;
+            }
+}
+
+@media only screen and (max-width: 325px) and (min-width: 200px){
+			#imagenCatalogo{
+				   width: 49%;
+                   margin-top: 5%;
+			}
+            .btnCancelar{
+                    margin-top: 5%;
+            }
+}
+
+@media (max-width:368px) and (min-width:200px)
+{
+    .login{
+        margin-top:10%;
+        width:100%;
+    }
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+        .login{
+         margin-top:10%;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:1024px){
+   
+     .ImagenModal{
+        margin-left:8%;
+    }
+
+    .cerrar{
+        right:-54px!important;
+    }
+
+    #img-producto{
+            width: 100%;
+    }
+
+    .btnLimpiarFiltros{
+        margin-left:1.5%;
+    }
+
+    .columnaPrecioVenta{
+        padding-left:12%;
+    }
+
+    .labelIncorporaciones{
+        font-size:70%;
+    }
+    .botonesMenu{
+        padding:0px;
+    }
+
+    .txtCantidadCarritoDetalle {
+        width: 22%;
+    }
+  
+    .btnAgregarCarrito {
+        width: 51%;
+    }
+    .btnConfig{
+        width:100px;
+    }
+    .divImagenLogo{
+        margin-right:155px;
+    }
+}
+
+@media only screen and (max-width: 1022px) and (min-width: 848px){
+        .login{
+         margin-top:20%;
+    }
+}
+
+@media only screen and (max-width: 848px) and (min-width: 768px){
+        .login{
+         margin-top:30%;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+        .login{
+         margin-top:10%;
+    }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 430px){
+        .login{
+         margin-top:53%;
+    }
+}
+
+@media only screen and (max-width: 506px) and (min-width: 376px){
+        .login{
+         width:360px;
+         margin-top: 54%;
+    }
+}
+
+@media only screen and (max-width: 426px) and (min-width: 426px){
+        .login{
+         margin-top:53%;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 425px){
+        .login{
+         margin-top:10%;
+        }
+        .cuadroImagen{
+            width:100%;
+            height:130px;
+        }
+        .ImagenModal{
+            margin-left:60%;
+        }
+        .cerrar{
+            right:-136px!important;
+        }
+          .parametros-productos{
+         margin-left:3%!important;
+         margin-right:3.7%;
+
+}
+}
+
+@media only screen and (max-width:405px) and (min-width:376px){
+    .ImagenModal{
+        margin-left:34%;
+        width: 170%;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 369px){
+        .login{
+            margin-top:10%;
+             width: 100%;
+        }
+       .cuadroImagen{
+               margin-top:5%;
+               height: 136px;
+               width: 99%;
+       }
+       .ImagenModal{
+           margin-left:75%;
+       }
+       .cerrar{
+           right:-200px!important;
+       }     
+}  
+
+
+@media only screen and (max-width: 320px) and (min-width: 220px){
+  
+        .cuadroImagen{
+            height: 132px;
+            width: 100%;
+        }
+
+        .ImagenModal {
+            margin-left: 78%;
+            width: 125%;
+        }
+
+        .cerrar{
+            right: -181px!important;
+        }
+
+        .columnaPrecioVenta{
+               width: 131%;
+               padding-left:0%;
+        }
+
+        #precioTexto{
+            margin-left:52px;
+        }
+}
+
+@media only screen and (max-width:314px) and (min-width:298px) {
+    .img-producto{
+        max-height: 94%!important;
+    }
+}
+
+@media only screen and (max-width:320px) and (min-width: 220px){
+    .alert-mensaje{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 778px){
+    .btnCantidad{
+        margin-top: 10%;
+    }
+    .btnRealizarPedido{
+        margin-top: 23%;
+    }
+    .alert-mensaje{
+        width:100%!important;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 430px){
+    .btnCantidad{
+        margin-top: 17%;
+    }
+    .lblImporte{
+        margin-top: 1%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+
+     .alert-mensaje{
+            width: 100%!important;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 375px){
+    .botonera{
+        font-size: 47%;
+    }
+    .btnCantidad{
+        margin-top: 36%;
+    }
+    .lblImporte{
+        font-size: 100%;
+    }
+    .btnRealizarPedido{
+        font-size: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) and (min-width: 300px){
+    .botonera{
+        font-size: 36%;
+    }
+    .lblImporte{
+        font-size: 100%;
+    }
+ 
+}
+
+@media only screen and (max-width: 360px) and (min-width: 300px){
+    .botonera{
+        font-size: 36%;
+    }
+    .lblImporte{
+        font-size: 100%;
+    }
+    .btnRealizarPedido{
+        font-size: 100%;
+    }
+    .btnCantidad{
+        margin-top: 5%;
+    }
+ 
+}
+
+@media only screen and (max-width: 320px) and (min-width: 300px){
+    .botonera{
+        font-size: 31%;
+    }
+    .lblImporte{
+        font-size: 100%;
+    }
+    .btnRealizarPedido{
+        font-size: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+    .parametros-productos {
+        height:395px;
+    }
+    #precioTexto{
+        margin-left:115px!important;
+        padding-left:0%;
+    }
+    .txtPrecioProducto {
+        width:26%!important;
+    }
+
+}
+
+/*estilo login*/
+@media only screen and (max-width: 320px){
+  .panelRegistro{
+      height:402%;
+      width:100%;
+  }
+    .registrar {
+        margin-top:3%;
+    }
+    #imagen {
+        width: 100%;
+    }
+    .formContacto2{
+        width:100%;
+    }
+    .formContacto{
+        width:100%;
+    }
+  
+}
+
+@media only screen and (max-width: 375px){
+  .panelRegistro{
+      height:402%;
+      width:100%;
+  }
+    .registrar {
+        margin-top:3%;
+    }
+    #imagen {
+        width: 100%;
+    }
+    .formContacto2{
+        width:100%;
+    }
+    formContacto{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+  .panelRegistro{
+      height:402%;
+      width:100%;
+  }
+    .registrar {
+        margin-top:3%;
+    }
+    #imagen {
+        width: 100%;
+    }
+    .formContacto {
+        width:100%;
+    }
+    .formContacto2{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px){
+     .div-ContactoResponsive{
+        display:none;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px){
+      .div-contacto{
+         display:none;
+      }
+      .columnaCarrito{
+         display:none;
+      }
+      .tablaIncorporaciones{
+         display:none;
+      }
+      .botoneraCarritoIncorporacion{
+          display:none;
+      }
+      .botoneraCarritoOferta{
+          display:none;
+      }
+      .tablaOfertas{
+          display:none;
+      }
+}
+
+.passwordeye{
+    background-color: white;
+}
+
+.passwordInput input{
+    border-right-color:white !important;
+}
+
+.passwordInput span {
+    border-color: #ababab !important;
+}
+
+.loginsesioncheckbox {
+    font-size: 22px;
+}
+

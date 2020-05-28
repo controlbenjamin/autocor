@@ -1,0 +1,78 @@
+﻿@model IEnumerable<AutocorApi.Servicios.Dto.Productos.ProductoBaseDto>
+
+@foreach (var producto in Model)
+{
+    string classOferta = producto.TieneOferta ? "ofertaPanel" : string.Empty;
+
+    <div class="panel panel-default card-producto calcular" data-producto="@Json.Encode(producto)">
+
+        <img src="@producto.UrlImagen" alt="@producto.Descripcion" class="img-responsive" onerror="setImageDefault(this);" style="width:100%;">
+
+        <div class="panel-body @classOferta">
+
+            @if (producto.TieneOferta == true)
+            {
+                <img src="@Url.Content("~/Assets/img/ofertas_icono_so.png")" alt="Oferta" class="logoOferta" style="width: 20%;" title="Oferta!" />
+            }
+            <h1 class="codigo-producto">@producto.CodigoPieza</h1>
+
+            <div class="descripcion-producto">
+                <p>@producto.Descripcion</p>
+            </div>
+
+            <hr>
+
+            <div class="precio">
+                <span style="font-size: 0.5em;">Precio Venta</span>
+                <strong class="precioVenta precioPrincipal">
+                    @producto.PrecioVigente.ToString("C2")
+                </strong>
+                <span style="font-size: 0.5em;">Costo Neto s/IVA</span>
+                <strong class="precioNeto precioSecundario">
+                    @producto.Precio.ToString("C2")
+                </strong>
+            </div>
+
+            <hr>
+
+            @{if (producto.StockEstado == "EN_STOCK")
+                {
+                    <div class="contenedor-Stock">
+                        <span class="stock stockDisponible verde" title="Stock disponible"></span>
+                        <span class="stock stockNoDisponible gris" title="Stock disponible"></span>
+                    </div>
+                }
+                else
+                {
+                    <div class="contenedor-Stock">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <span>Stock</span>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="stock stockDisponible gris" title="Consultar stock"></span>
+                                <span class="stock stockNoDisponible amarillo" title="Consultar stock"></span>
+                            </div>
+                            <div class="col-xs-4">
+
+                            </div>
+                        </div>
+                     
+                    </div>
+                }
+
+            }
+        </div>
+
+        <div class="panel-footer text-center">
+            <button type="button" class="btn btn-primary btnAgregarCarrito" data-producto="@producto.CodigoPieza" 
+                    data-unidad-venta="@producto.UnidadVenta">
+                Añadir al carrito
+            </button>
+            <button type="button" class="btn btn-primary btnVerDetalle">
+                Ver detalles
+            </button>
+        </div>
+    </div>
+
+}

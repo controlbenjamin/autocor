@@ -1,0 +1,85 @@
+﻿@using Autocor.Catalogo.Web.Utils.Mensaje
+@model  Autocor.Catalogo.Web.Models.ContactoModel
+@{
+    ViewBag.Title = "Consulta";
+    Layout = "~/Views/Shared/_Login.cshtml";
+    var mensaje = ViewBag.Mensaje as MensajeWeb;
+}
+<style>
+    .formContacto{
+        margin-bottom:5%;
+    }
+</style>
+
+<div class="panel panel-default formContacto">
+    <div class="panel-body">
+        @if (mensaje != null)
+        {
+            <div class="alert alert-@mensaje.CssContext">
+                @if (!string.IsNullOrEmpty(mensaje.Titulo))
+                {
+                    <strong>@mensaje.Titulo</strong>
+                }
+                @mensaje.Texto
+            </div>
+        }
+
+        @using (Html.BeginForm("ContactoLogin", "Contacto", FormMethod.Post, new { htmlAttributes = new { @class = "form-horizontal" } }))
+        {
+            @Html.AntiForgeryToken()
+            <fieldset>
+                <h2>Información de contacto</h2>
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="textinput">Nombre</label>
+                        @Html.EditorFor(model => model.NombreCliente, new { htmlAttributes = new { @class = "form-control input-md" } })
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="textinput">E-Mail</label>
+                        @Html.EditorFor(model => model.EmailCliente, new { htmlAttributes = new { @class = "form-control input-md" } })
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono</label>
+                        <div>
+                            <input id="TelefonoCaracteristica" name="TelefonoCaracteristica" type="text" placeholder="" maxlength="5" class="form-control input-md TelefonoCaracteristica">
+                                <input id="TelefonoNumero" name="TelefonoNumero" type="text" placeholder="" class="form-control input-md TelefonoNumero">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                     <div class="form-group">
+                        <label for="Asunto">Asunto</label>
+                         @Html.EditorFor(model => model.Asunto, new { htmlAttributes = new { @class = "form-control input-md" } })
+                    </div>
+                </div>
+
+                <!-- Textarea -->
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="textarea">Mensaje</label>
+                        <textarea class="form-control  TextAreaMensaje" id="Mensaje" name="Mensaje"></textarea>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-exito btnEnviar">Enviar</button>
+                        <a href="@Url.Action("Index", "Login")" class="btn btn-cancel">Volver atrás</a>
+                    </div>
+                </div>
+            </fieldset>
+        }
+    </div>
+</div>

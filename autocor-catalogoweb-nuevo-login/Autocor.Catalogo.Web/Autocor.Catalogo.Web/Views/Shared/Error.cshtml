@@ -1,0 +1,25 @@
+﻿@*@model System.Web.Mvc.HandleErrorInfo*@
+@model Autocor.Catalogo.Web.Models.Errores.ErrorModel
+
+@{
+    ViewBag.Title = Model.Titulo;
+
+}
+    <div id="Error">
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-md-12">
+
+                <div class="alert alert-danger mar-t-20">
+
+                    <h3 class="text-center mar-b-20"><i class="fa fa-lg fa-exclamation-circle mar-r-5"></i>@Model.Titulo</h3>
+
+                    <p class="text-center">@Model.Mensaje</p>
+
+                    @if (!string.IsNullOrEmpty(Model.Detalle) || Model.Detalle != Model.Mensaje)
+                    {
+                        <p class="text-center">@Model.Detalle</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
