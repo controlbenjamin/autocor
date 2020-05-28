@@ -1,0 +1,48 @@
+-No pedir autorizacion cuando se registra el usuario con mail
+	Existe la posibilidad de darle al cliente un acceso inmediato y que en el panel agreguemos un estado que sea "intermedio" y en lugar de pendiente, ahí decidimos aceptarlo totalmente o bloquearlo? Esto es para evitar que estèn llamando por tel, o por otro medio y no frenar tanto el proceso. Ustedes dirán factibilidad.
+	cuando vos ingresas un nuevo usuario, el usuario se guarda en la base de datos con estado = null
+	ese estado se cambia de un panel de control que no te pase por que uno, esta echo en angular, y dos, no hace falta tocarlo
+	uno de los requerimientos que te pase es que eso de "usuario pendiente de autorizacion" no este mas
+	pero no quites todo: si bloquean al usuario desde el panel de control (estado = 0, que es un "false", por que SQL no tiene bool, tiene bit)
+	el usuario debe aparecer como bloqueado
+	pero si no aceptaron al usuario, el usuario debe poder ingresar al catalogo
+	otra cosa, posiblemente hayan unos comentarios que dicen "dragon" en el codigo, esos son puntos de interes que marque yo con la primera palabra que supuse que no iba a estar en ninguna parte del codigo
+	borra esos comentarios nomas
+	una ves que te registras debes poder meterte al catalogo
+	en estos momentos eso no esta implementado y si o si necesitas que te autorizen del panel de control
+	en el blanqueo de clave, deberia mandar un mail a q direccion? para hacer testeos, a la tuya
+	no recuerdo si eso esta implemetnado con mi mail o no, para produccion, al mail que esta en web.config
+
+	null= pendiente de autorizacion que ya no debe estar
+	0 = bloqueado, solo si lo hacen desde el panel de control
+	1 = por defecto, una vez que registra el mail
+
+
+-Colocar campo "Olvide mi contraseña", enviar mensaje a un mail x(el mio) solicitando blanqueo de la clave
+
+-Ojo para ver si la clave esta bien escrita o un check para mantener la sesion iniciada
+
+-Pantalla de Registro de usuarios:
+	Agregar el texto: "Complete los siguientes campos para crear una NUEVA clave de acceso al sistema"
+	ese estado se cambia de un panel de control que no te pase por que uno, esta echo en angular, y dos, no hace falta tocarlo. 
+
+Detalles del proyecto:
+ 	-el login se hace usando la id del usuario como nombre de usuario y su cuil como contraseña
+	-el cliente quiere que cuando se logueen asi, les tire para registrar un mail y contraseña
+	-al pedir las cosas que pidio el cliente, no tubo en cuentas algunas cosas, vas a tener que ver si todas las pantallas hacen sentido textos incluidos
+	-fijate que todo lo que ya este echo funciona bien, y que cosas entan rotas
+
+en el webconfig, comentar esto, ya que nunca llega a loguearse sino (no, tiene que ser un nombre de una exepcion y un stacktrack)
+
+<customErrors mode="On">
+      <error statusCode="404" redirect="~/Error/RecursoNoEncontrado" />
+      <error statusCode="500" redirect="~/Error/ServerError" />
+</customErrors>
+
+El conexion string
+
+<connectionStrings>
+  <add name="db_autocor" providerName="SqlServer.Data" connectionString="Server=192.22.5.140;Database=autocor_2019-09-30;Uid=livoTurismo;Pwd=livo;" /> <!--remoto-->
+  <!--<add name="db_autocor" providerName="SqlServer.Data" connectionString="Server=e2-DOTNET-01;Database=autocor_2019-09-30;Uid=livoTurismo;Pwd=livo;" />--> <!--oficina-->
+  <!--<add name="db_autocor" providerName="SqlServer.Data" connectionString="Server=autocor.com.ar;Database=autocor;Uid=extrados;Pwd=ExtraDosE2;" />--> <!--prod-->
+</connectionStrings>

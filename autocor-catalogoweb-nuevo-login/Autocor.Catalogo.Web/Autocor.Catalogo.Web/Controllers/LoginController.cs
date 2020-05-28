@@ -51,11 +51,12 @@ namespace Autocor.Catalogo.Web.Controllers
                 return View("Index", usuarioModel);
             }
 
-            if (usuario.Estado == null && usuario.Rol == Rol.CLIENTE && usuario.EstadoWeb != EstadoWeb.USUARIO_SIN_USUARIO_WEB)
-            {
-                ModelState.AddModelError("", "Usuario pendiente de autorizacion.");
-                return View("Index", usuarioModel);
-            }
+            //benja --> se quita que por no estar autorizado el usuario vuelva a login
+            //if (usuario.Estado == null && usuario.Rol == Rol.CLIENTE && usuario.EstadoWeb != EstadoWeb.USUARIO_SIN_USUARIO_WEB)
+            //{
+            //    ModelState.AddModelError("", "Usuario pendiente de autorizacion.");
+            //    return View("Index", usuarioModel);
+            //}
 
             if (usuario.Estado == false)
             {
