@@ -19,3 +19,9 @@ Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\Autocor
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.dll
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\bin\Debug\AutocorApi.Entidades.pdb
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csprojAssemblyReference.cache
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.csproj.CoreCompileInputs.cache
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.dll
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Entidades\obj\Debug\AutocorApi.Entidades.pdb

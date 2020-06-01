@@ -39,3 +39,12 @@ Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\Auto
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
 Z:\EXTRADOS\AUTOCOR\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.dll
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Repositorios.pdb
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.dll
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\bin\Debug\AutocorApi.Entidades.pdb
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csprojAssemblyReference.cache
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CoreCompileInputs.cache
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.csproj.CopyComplete
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.dll
+D:\Repositorios\autocor\autocorapi\AutocorApi\AutocorApi.Repositorios\obj\Debug\AutocorApi.Repositorios.pdb

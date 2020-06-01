@@ -9,11 +9,12 @@ namespace Autocor.Catalogo.Web.Models
     public class UsuarioModel
     {
         public int Id { get; set; }
-        [Required(AllowEmptyStrings =false,ErrorMessage ="El Nro es requerido")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "El Nro es requerido")]
         public string Nombre { get; set; }
-        [Required(AllowEmptyStrings =false,ErrorMessage ="La contraseña es requerida")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "La contraseña es requerida")]
         public string Password { get; set; }
         public bool MantenerSesion { get; set; } = false;
+        public string Email { get; set; }
     }
 }
 

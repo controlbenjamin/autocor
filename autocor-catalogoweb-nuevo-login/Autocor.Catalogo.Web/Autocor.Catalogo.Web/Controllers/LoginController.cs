@@ -7,6 +7,8 @@ using System;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
+using AutocorApi.Servicios.Email;
+
 
 namespace Autocor.Catalogo.Web.Controllers
 {
@@ -15,11 +17,13 @@ namespace Autocor.Catalogo.Web.Controllers
     {
         private IServicioAutenticacion _srvAutenticacion;
         private IServicioClientes _srvClientes;
+        private IServicioEmail _srvEmail;
 
-        public LoginController(IServicioAutenticacion srvAutenticacion, IServicioClientes srvClientes)
+        public LoginController(IServicioAutenticacion srvAutenticacion, IServicioClientes srvClientes, IServicioEmail srvEmail)
         {
             this._srvAutenticacion = srvAutenticacion;
             this._srvClientes = srvClientes;
+            this._srvEmail = srvEmail;
         }
 
         // GET: Login
@@ -107,5 +111,24 @@ namespace Autocor.Catalogo.Web.Controllers
             SessionManager.Current.Clear();
             return RedirectToAction("Index", "Login");
         }
+
+
+        [HttpGet]
+        public ActionResult ResetPassword()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ResetPassword(UsuarioModel model)
+        {
+            _srvEmail.EnviarEmailRestaurarClave(model.Email);
+            return View();
+        }
+
+
+
+
     }
 }
