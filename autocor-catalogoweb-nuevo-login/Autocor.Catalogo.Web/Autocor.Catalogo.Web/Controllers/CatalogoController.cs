@@ -36,16 +36,16 @@ namespace Autocor.Catalogo.Web.Controllers
         public ActionResult Index(FiltroProductoModel filtroProducto)
         {
 
-            
-            var cliente = SessionManager.Current.Usuario.Codigo; // dragon
+            return RedirectToAction("CerrarSesion", "Login");
+            //var cliente = SessionManager.Current.Usuario.Codigo; // dragon
 
-            var estadoUsuario = _srvUsuariosWeb.CheckEstado(cliente.ToString());
+            //var estadoUsuario = _srvUsuariosWeb.CheckEstado(cliente.ToString());
 
-            if (!estadoUsuario)
-            {
-                return RedirectToAction("CerrarSesion", "Login");
-            }
-            
+            //if (!estadoUsuario)
+            //{
+            //    return RedirectToAction("CerrarSesion", "Login");
+            //}
+
             PagedResultDto<ProductoDto> productoResult;
             bool ultimaPagina = true;
 

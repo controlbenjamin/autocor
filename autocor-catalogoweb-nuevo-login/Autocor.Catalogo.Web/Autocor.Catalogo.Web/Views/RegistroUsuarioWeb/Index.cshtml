@@ -5,7 +5,7 @@
     ViewBag.NroUsuario = "Numero Usuario";//Model.CodigoCliente;
     var hiddenRegistroDiv = "hidden";
     var hiddenMensajeDiv = "";
-    if(!ViewData.ModelState.IsValid)
+    if (!ViewData.ModelState.IsValid)
     {
         hiddenRegistroDiv = "";
         hiddenMensajeDiv = "hidden";
@@ -18,7 +18,6 @@
         margin-bottom: 2%;
         margin-top: 2%;
     }
-    
 </style>
 <style src="@Url.Content("~/Assets/css/estilos.css")"></style>
 
@@ -34,7 +33,7 @@
             <label for="Nombre">Nro. de Cliente</label>
             <div class="input-group input-group-lg">
                 <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
-                @Html.TextBoxFor(model => model.CodigoCliente, htmlAttributes: new { @class = "form-control", value = ViewBag.NroUsuario, @readonly="readonly"  })
+                @Html.TextBoxFor(model => model.CodigoCliente, htmlAttributes: new { @class = "form-control", value = ViewBag.NroUsuario, @readonly = "readonly" })
             </div>
             @Html.ValidationMessageFor(model => model.CodigoCliente, "", new { @class = "text-danger error" })
         </div>
@@ -51,22 +50,24 @@
 
 
         <div class="form-group">
-            <label for="Pass">Contraseña</label>
-            <div class="input-group input-group-lg">
+            <label for="Pass">Clave</label>
+            <div class="input-group input-group-lg passwordInput">
                 <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
-                @Html.PasswordFor(model => model.Contraseña, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Contraeña", @value=""})
+                @Html.PasswordFor(model => model.Clave, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Clave", @value = "" })
+                <span class="passwordeye input-group-addon " id="sizing-addon3" onclick="mostrarClave()"><i class="fa fa-eye" aria-hidden="true"></i></span>
             </div>
-            @Html.ValidationMessageFor(model => model.Contraseña, "", new { @class = "text-danger error" })
+            @Html.ValidationMessageFor(model => model.Clave, "", new { @class = "text-danger error" })
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         </div>
 
         <div class="form-group">
-            <label for="Pass">Repetir Contraseña</label>
+            <label for="Pass">Repetir Clave</label>
             <div class="input-group input-group-lg">
                 <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
-                @Html.PasswordFor(model => model.RepetirContraseña, htmlAttributes: new { @class = "form-control", placeholder = "Repita la Contraeña", @value="" })
+                @Html.PasswordFor(model => model.RepetirClave, htmlAttributes: new { @class = "form-control", placeholder = "Repita la Clave", @value = "" })
+                <span class="passwordeye input-group-addon " id="sizing-addon3" onclick="mostrarRepetirClave()"><i class="fa fa-eye" aria-hidden="true"></i></span>
             </div>
-            @Html.ValidationMessageFor(model => model.RepetirContraseña, "", new { @class = "text-danger error" })
+            @Html.ValidationMessageFor(model => model.RepetirClave, "", new { @class = "text-danger error" })
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         </div>
 
@@ -98,9 +99,30 @@
     <script src="@Url.Content("~/Assets/js/registro_usuario_web.js")"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script>
-        $(document).ready(function () {
-            generarCandado();
-            generarOcultarBody();
-        });
+
+        function mostrarClave() {
+
+            var x = document.getElementById("Clave");
+            
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+
+        }
+
+        function mostrarRepetirClave() {
+
+            var x = document.getElementById("RepetirClave");
+
+            if (x.type == "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+
+        }
+
     </script>
 }

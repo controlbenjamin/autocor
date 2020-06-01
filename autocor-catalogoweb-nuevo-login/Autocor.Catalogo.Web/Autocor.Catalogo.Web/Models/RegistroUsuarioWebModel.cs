@@ -14,11 +14,11 @@ namespace Autocor.Catalogo.Web.Models
         [EmailAddress(ErrorMessage = "Ingrese un E-mail valido")]
         public string Email { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "La contraseña es requerida")]
-        public string Contraseña { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "La clave es requerida")]
+        public string Clave { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "La contraseña es requerida")]
-        [Compare("Contraseña" , ErrorMessage = "Las dos contraseñas no son iguales")]
-        public string RepetirContraseña { get; set; }
+        [Required(AllowEmptyStrings = false, ErrorMessage = "La clave es requerida")]
+        [Compare("Clave" , ErrorMessage = "Las dos claves no son iguales")]
+        public string RepetirClave { get; set; }
     }
 }

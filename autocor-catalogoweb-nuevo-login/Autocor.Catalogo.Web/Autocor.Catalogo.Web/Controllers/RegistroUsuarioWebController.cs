@@ -45,7 +45,7 @@ namespace Autocor.Catalogo.Web.Controllers
 
             //TODO: ver que si un cliente ya tiene usuarioweb, no se pueda volver a registrar. 
             int codcli = usuario.CodigoCliente ?? default(int);
-            var exito = _srvUsuariosWeb.NuevoUsuariosWeb(codcli,usuario.Email,usuario.Contraseña);
+            var exito = _srvUsuariosWeb.NuevoUsuariosWeb(codcli,usuario.Email,usuario.Clave);
             if (!exito)
             {
                 ModelState.AddModelError("Email", "Este mail ya esta en uso");
