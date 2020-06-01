@@ -436,6 +436,10 @@
       <Project>{d4d0134d-e14e-4802-bce0-92993926503c}</Project>
       <Name>AutocorApi.Dependencias.Ninject</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\autocorapi\AutocorApi\AutocorApi.Repositorios\AutocorApi.Repositorios.csproj">
+      <Project>{402A6114-DC0C-4E8E-8D3E-89C05152E90E}</Project>
+      <Name>AutocorApi.Repositorios</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\autocorapi\AutocorApi\AutocorApi.Servicios\AutocorApi.Servicios.csproj">
       <Project>{80f30d5c-d27f-4673-b73d-9c9113a3a0af}</Project>
       <Name>AutocorApi.Servicios</Name>

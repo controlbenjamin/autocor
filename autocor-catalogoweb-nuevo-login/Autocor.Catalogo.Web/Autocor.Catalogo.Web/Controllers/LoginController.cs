@@ -18,12 +18,16 @@ namespace Autocor.Catalogo.Web.Controllers
         private IServicioAutenticacion _srvAutenticacion;
         private IServicioClientes _srvClientes;
         private IServicioEmail _srvEmail;
+        private IServicioUsuariosWeb _srvUsuarioWeb;
 
-        public LoginController(IServicioAutenticacion srvAutenticacion, IServicioClientes srvClientes, IServicioEmail srvEmail)
+
+        public LoginController(IServicioAutenticacion srvAutenticacion, IServicioClientes srvClientes,
+            IServicioEmail srvEmail, IServicioUsuariosWeb srvUsuarioWeb)
         {
             this._srvAutenticacion = srvAutenticacion;
             this._srvClientes = srvClientes;
             this._srvEmail = srvEmail;
+            this._srvUsuarioWeb = srvUsuarioWeb;
         }
 
         // GET: Login
@@ -32,7 +36,7 @@ namespace Autocor.Catalogo.Web.Controllers
         public ActionResult Index()
         {
             HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
-            if(authCookie == null) return View();
+            if (authCookie == null) return View();
             FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
             var cliente = _srvClientes.BuscarPorUsuario(ticket.Name);
             SessionManager.Inicializar(cliente);
@@ -123,9 +127,24 @@ namespace Autocor.Catalogo.Web.Controllers
         [HttpPost]
         public ActionResult ResetPassword(UsuarioModel model)
         {
-            _srvEmail.EnviarEmailRestaurarClave(model.Email);
 
-            return RedirectToAction("SolicitudEnviada");
+            // si el mail existe enviar mail para blanqueo de clave
+            if (_srvUsuarioWeb.CheckExisteMail(model.Email) == true)
+            {
+                _srvEmail.EnviarEmailRestaurarClave(model.Email);
+
+                return RedirectToAction("SolicitudEnviada");
+            }
+            else
+            {
+                //en caso de no existir retornar vista con mensaje de mail invalido
+
+                ModelState.AddModelError("", "Email no registrado!");
+                return View("ResetPassword", model);
+
+
+
+            }
         }
 
         [HttpGet]

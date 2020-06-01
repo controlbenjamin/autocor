@@ -8,6 +8,7 @@ using System.Web.Security;
 using AutocorApi.Servicios.Core;
 using Autocor.Catalogo.Web.Utils.Session;
 
+
 namespace Autocor.Catalogo.Web.Controllers
 {
     public class RegistroUsuarioWebController : Controller
@@ -15,6 +16,7 @@ namespace Autocor.Catalogo.Web.Controllers
         private IServicioAutenticacion _srvAutenticacion;
         private IServicioClientes _srvClientes;
         private IServicioUsuariosWeb _srvUsuariosWeb;
+     
 
         public RegistroUsuarioWebController(IServicioAutenticacion srvAutenticacion, IServicioClientes srvClientes, IServicioUsuariosWeb srvUsuariosWeb)
         {
