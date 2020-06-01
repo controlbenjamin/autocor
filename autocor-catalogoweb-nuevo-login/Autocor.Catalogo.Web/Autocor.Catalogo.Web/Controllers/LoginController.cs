@@ -124,9 +124,15 @@ namespace Autocor.Catalogo.Web.Controllers
         public ActionResult ResetPassword(UsuarioModel model)
         {
             _srvEmail.EnviarEmailRestaurarClave(model.Email);
-            return View();
+
+            return RedirectToAction("SolicitudEnviada");
         }
 
+        [HttpGet]
+        public ActionResult SolicitudEnviada()
+        {
+            return View();
+        }
 
 
 

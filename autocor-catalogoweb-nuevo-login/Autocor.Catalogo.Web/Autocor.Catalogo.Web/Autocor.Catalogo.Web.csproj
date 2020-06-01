@@ -327,6 +327,7 @@
     <Content Include="Views\RegistroUsuarioWeb\Index.cshtml" />
     <Content Include="Views\RegistroUsuarioWeb\RegistroCompleto.cshtml" />
     <Content Include="Views\Login\ResetPassword.cshtml" />
+    <Content Include="Views\Login\SolicitudEnviada.cshtml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
     </None>

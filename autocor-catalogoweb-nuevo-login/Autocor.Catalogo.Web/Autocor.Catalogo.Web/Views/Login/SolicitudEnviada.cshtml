@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Solicitud Enviada";
+}
+
+
+<div id="mensajeDiv" style="text-align:center;">
+    <div class="mensajeRegistroCompleto">
+
+        <h1 style="color:blue">Solicitud Enviada</h1>
+
+
+        <p>La solicitud de blanqueo de clave, fue solicitada correctamente!</p>
+
+
+    </div>
+    <div>
+
+        <a class="btn btn-exito btn-lg" href="@Url.Action("Index","Login")" class="linkConsulta">
+            <i class="fa fa-angle-double-right fa-lg"></i>&nbsp;
+            Terminar
+        </a>
+    </div>
+</div>
+
+
+@section scripts
+{
+    <script src="@Url.Content("~/Assets/js/comun.js")"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+}

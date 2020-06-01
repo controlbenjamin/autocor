@@ -32,61 +32,71 @@
 }
 
 
-<div class="login">
-    @using (Html.BeginForm("IniciarSesion", "Login", FormMethod.Post))
-    {
-        @Html.AntiForgeryToken()
+    <div class="login">
+        @using (Html.BeginForm("IniciarSesion", "Login", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
 
-        <h3 class="text-center">Inicio de sesión</h3>
-        <div class="form-group">
-            <label for="Nombre">Usuario</label>
-            <div class="input-group input-group-lg">
-                <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
-                @Html.TextBoxFor(model => model.Nombre, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Usuario" })
+            <h3 class="text-center">Inicio de sesión</h3>
+            <div class="form-group">
+                <label for="Nombre">Usuario</label>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-user"></i></span>
+                    @Html.TextBoxFor(model => model.Nombre, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Usuario" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger error" })
             </div>
-            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger error" })
-        </div>
 
-        <div class="form-group">
-            <label for="Pass">Clave</label>
-            <div class="input-group input-group-lg passwordInput">
-                <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
-                @Html.PasswordFor(model => model.Password, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Clave" })
-                <span class="passwordeye input-group-addon " id="sizing-addon3" onclick="togglePassword()"><i class="fa fa-eye" aria-hidden="true"></i></span>
+            <div class="form-group">
+                <label for="Pass">Clave</label>
+                <div class="input-group input-group-lg passwordInput">
+                    <span class="input-group-addon" id="sizing-addon3"><i class="glyphicon glyphicon-lock"></i></span>
+                    @Html.PasswordFor(model => model.Password, htmlAttributes: new { @class = "form-control", placeholder = "Ingrese Clave" })
+                    <span class="passwordeye input-group-addon " id="sizing-addon3" onclick="togglePassword()"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                </div>
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger error" })
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             </div>
-            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger error" })
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        </div>
 
-        <div class="form-group">
-            <label>@Html.CheckBoxFor(model => model.MantenerSesion, htmlAttributes: new { })<span class="loginsesioncheckbox"> no cerrar sesion</span></label>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <button type="submit" class="btn btn-exito btn-block btn-lg" id="boton" name="name">
-                    <i class="fa fa-sign-in fa-lg"></i>&nbsp;
-                    Ingresar a Catálogo
-                </button>
+            <div class="form-group">
+                <label>@Html.CheckBoxFor(model => model.MantenerSesion, htmlAttributes: new { })<span class="loginsesioncheckbox"> no cerrar sesion</span></label>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <a href="@Url.Action("Index","Registro")" class="btn btn-default btn-block btn-lg registrar">
-                    Registrarse
-                </a>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <button type="submit" class="btn btn-exito btn-block btn-lg" id="boton" name="name">
+                        <i class="fa fa-sign-in fa-lg"></i>&nbsp;
+                        Ingresar a Catálogo
+                    </button>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <a href="@Url.Action("Index","Registro")" class="btn btn-default btn-block btn-lg registrar">
+                        Registrarse
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <div class="row">
+            <div class="row">
 
-            <div class="col-xs-12 col-md-12 col-sm-12 btnConsultar">
-                <a href="@Url.Action("VistaContacto","Contacto")" class="linkConsulta">
-                    Consultas aquí
-                </a>
+                <div class="col-xs-12 col-md-12 col-sm-12 btnConsultar">
+                    <a href="@Url.Action("VistaContacto","Contacto")" class="linkConsulta">
+                        Consultas aquí
+                    </a>
 
+                </div>
             </div>
-        </div>
-    }
-</div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-md-12 col-sm-12 btnConsultar">
+                    <a href="@Url.Action("ResetPassword","Login")" class="linkConsulta">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                </div>
+            </div>
+        }
+    </div>
 @section scripts
 {
     <script src="@Url.Content("~/Assets/js/comun.js")"></script>
